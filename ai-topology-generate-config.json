@@ -1,0 +1,1279 @@
+{
+  "version": "1.0.0",
+  "tasks": [
+    {
+      "id": "38c542cb-bec3-4136-b7ca-b112952f1a76",
+      "workspaceId": "workspace_dpjunwgr",
+      "cost": {
+        "threadId": "direct-model-38c542cb-bec3-4136-b7ca-b112952f1a76",
+        "traceId": "c8507c2e79394286a79778b3d77f50c1",
+        "worldId": "11823438033154",
+        "startReported": true,
+        "endReported": true,
+        "jobIds": [
+          "93298153730"
+        ]
+      },
+      "billing": {
+        "phase": "finished",
+        "lease": {
+          "userId": "1273678281048419",
+          "threadId": "direct-model-38c542cb-bec3-4136-b7ca-b112952f1a76",
+          "traceId": "c8507c2e79394286a79778b3d77f50c1",
+          "usageKey": "asset:model:topology:38c542cb-bec3-4136-b7ca-b112952f1a76"
+        }
+      },
+      "createdAt": 1794716708759,
+      "updatedAt": 1794716864141,
+      "executionDurationMs": 148728,
+      "resumed": false,
+      "status": "success",
+      "phase": "succeeded",
+      "algorithm": 0,
+      "faceCount": 2000,
+      "genQuality": 2,
+      "style": 2,
+      "telemetryContext": {
+        "enterMethod": "chat_list"
+      },
+      "input": {
+        "prompt": "维多利亚时代伦敦警察局，三层红砖市政建筑，深灰屋顶、石质窗框、中央拱门与徽章位置，独立完整建筑，正面入口清晰，无地面无人物，玩家可进入交互"
+      },
+      "queue": {
+        "jobId": "93298153730"
+      },
+      "image": {
+        "taskId": "11778113626370",
+        "uri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/4f6176746c2643c39023fce92c1f5101.png",
+        "creationsId": "93207726850"
+      },
+      "model": {
+        "attempt": 1,
+        "taskId": "11836793222914",
+        "uri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/ppl_atom_task_93038979330.glb",
+        "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/cae71d7b00fd426e9492dbf53686f4c2.png",
+        "creationsId": "93207726850",
+        "scale": {
+          "x": 9.545441235411106,
+          "y": 9.545441235411106,
+          "z": 9.545441235411106
+        }
+      },
+      "terminalAt": 1794716864141
+    },
+    {
+      "id": "791fc8d0-5026-4b9d-80f5-4ca29ede687c",
+      "workspaceId": "workspace_dpjunwgr",
+      "cost": {
+        "threadId": "direct-model-791fc8d0-5026-4b9d-80f5-4ca29ede687c",
+        "traceId": "5b1d2fc638c64cb4b378786697ce4444",
+        "worldId": "11823438033154",
+        "startReported": true,
+        "endReported": true,
+        "jobIds": [
+          "93038950658"
+        ]
+      },
+      "billing": {
+        "phase": "finished",
+        "lease": {
+          "userId": "1273678281048419",
+          "threadId": "direct-model-791fc8d0-5026-4b9d-80f5-4ca29ede687c",
+          "traceId": "5b1d2fc638c64cb4b378786697ce4444",
+          "usageKey": "asset:model:topology:791fc8d0-5026-4b9d-80f5-4ca29ede687c"
+        }
+      },
+      "createdAt": 1794716501341,
+      "updatedAt": 1794716644957,
+      "executionDurationMs": 136984,
+      "resumed": false,
+      "status": "success",
+      "phase": "succeeded",
+      "algorithm": 0,
+      "faceCount": 2000,
+      "genQuality": 2,
+      "style": 2,
+      "telemetryContext": {
+        "enterMethod": "chat_list"
+      },
+      "input": {
+        "prompt": "维多利亚时代伦敦警察局，三层红砖市政建筑，深灰屋顶、石质窗框、中央拱门与徽章位置，独立完整建筑，正面入口清晰，无地面无人物"
+      },
+      "queue": {
+        "jobId": "93038950658"
+      },
+      "image": {
+        "taskId": "11778113622530",
+        "uri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/7624dcdf9fcf45e5b3916fa5bb65296c.png",
+        "creationsId": "93487257346"
+      },
+      "model": {
+        "attempt": 1,
+        "taskId": "11913262329090",
+        "uri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/ppl_atom_task_94023874306.glb",
+        "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/00238723b99a41e88108580a802a3d36.png",
+        "creationsId": "93487257346",
+        "scale": {
+          "x": 7.450197133742002,
+          "y": 7.450197133742002,
+          "z": 7.450197133742002
+        }
+      },
+      "terminalAt": 1794716644957
+    },
+    {
+      "id": "54e27aaa-bce9-43e5-b2af-359b6b9bd949",
+      "workspaceId": "workspace_dpjunwgr",
+      "cost": {
+        "threadId": "direct-model-54e27aaa-bce9-43e5-b2af-359b6b9bd949",
+        "traceId": "2a11eae7005d4456b40f758380854c0f",
+        "worldId": "11823438033154",
+        "startReported": true,
+        "endReported": true,
+        "jobIds": [
+          "93483623938"
+        ]
+      },
+      "billing": {
+        "phase": "finished",
+        "lease": {
+          "userId": "1273678281048419",
+          "threadId": "direct-model-54e27aaa-bce9-43e5-b2af-359b6b9bd949",
+          "traceId": "2a11eae7005d4456b40f758380854c0f",
+          "usageKey": "asset:model:topology:54e27aaa-bce9-43e5-b2af-359b6b9bd949"
+        }
+      },
+      "createdAt": 1794715659731,
+      "updatedAt": 1794715823176,
+      "executionDurationMs": 156693,
+      "resumed": false,
+      "status": "success",
+      "phase": "succeeded",
+      "algorithm": 0,
+      "faceCount": 2000,
+      "genQuality": 2,
+      "style": 2,
+      "telemetryContext": {
+        "enterMethod": "chat_list"
+      },
+      "input": {
+        "prompt": "能进入的"
+      },
+      "queue": {
+        "jobId": "93483623938"
+      },
+      "image": {
+        "taskId": "11778113595394",
+        "uri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/210bab0ffad641469532e44dd293532b.png",
+        "creationsId": "93205126914"
+      },
+      "model": {
+        "attempt": 1,
+        "taskId": "11778113595906",
+        "uri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/ppl_atom_task_94023793922.glb",
+        "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/623a405121914283a14a764f889337de.png",
+        "creationsId": "93205126914",
+        "scale": {
+          "x": 1.1704785475387143,
+          "y": 1.1704785475387143,
+          "z": 1.1704785475387143
+        }
+      },
+      "terminalAt": 1794715823176
+    },
+    {
+      "id": "68fbf536-537b-4d0c-a6b9-cf16dea7f8e8",
+      "workspaceId": "workspace_vbfzgfjl",
+      "cost": {
+        "threadId": "direct-model-68fbf536-537b-4d0c-a6b9-cf16dea7f8e8",
+        "traceId": "e1dcf8dfa7e1413a8cf220ad4680bd92",
+        "worldId": "11823438033154",
+        "startReported": true,
+        "endReported": true,
+        "jobIds": [
+          "93483373826"
+        ]
+      },
+      "billing": {
+        "phase": "finished",
+        "lease": {
+          "userId": "1273678281048419",
+          "threadId": "direct-model-68fbf536-537b-4d0c-a6b9-cf16dea7f8e8",
+          "traceId": "e1dcf8dfa7e1413a8cf220ad4680bd92",
+          "usageKey": "asset:model:topology:68fbf536-537b-4d0c-a6b9-cf16dea7f8e8"
+        }
+      },
+      "createdAt": 1794713511300,
+      "updatedAt": 1794713668157,
+      "executionDurationMs": 150385,
+      "resumed": false,
+      "status": "success",
+      "phase": "succeeded",
+      "algorithm": 0,
+      "faceCount": 2000,
+      "genQuality": 2,
+      "style": 2,
+      "telemetryContext": {
+        "enterMethod": "new_create"
+      },
+      "input": {
+        "prompt": "高品质维多利亚时代伦敦连续商业排屋组，五栋相连的窄体红砖与灰石店铺，包含面包店、药房、裁缝铺、咖啡馆和杂货铺的不同橱窗与门头结构，二至三层，烟囱、雨棚、排水管和侧巷细节丰富，写实英伦侦探游戏风格，整组建筑完整，不要人物，不要地面底座"
+      },
+      "queue": {
+        "jobId": "93483373826"
+      },
+      "image": {
+        "taskId": "11836793120258",
+        "uri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/fb82024ee15a4a9bb4186eaa7322878d.png",
+        "creationsId": "93202711554"
+      },
+      "model": {
+        "attempt": 1,
+        "taskId": "11778113526274",
+        "uri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/ppl_atom_task_94310286082.glb",
+        "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/5a08507d0cbd41a8aeee2a4c8701b371.png",
+        "creationsId": "93202711554",
+        "scale": {
+          "x": 9.533024861256697,
+          "y": 9.533024861256697,
+          "z": 9.533024861256697
+        }
+      },
+      "terminalAt": 1794713668157
+    },
+    {
+      "id": "bf8d0be3-54a1-4062-a6ca-a2ab919ceea1",
+      "workspaceId": "workspace_ul13d7z2",
+      "cost": {
+        "threadId": "direct-model-bf8d0be3-54a1-4062-a6ca-a2ab919ceea1",
+        "traceId": "dec7af3a05934e64a587d0f7c56598c9",
+        "worldId": "11823438033154",
+        "startReported": true,
+        "endReported": true,
+        "jobIds": [
+          "93202711042"
+        ]
+      },
+      "billing": {
+        "phase": "finished",
+        "lease": {
+          "userId": "1273678281048419",
+          "threadId": "direct-model-bf8d0be3-54a1-4062-a6ca-a2ab919ceea1",
+          "traceId": "dec7af3a05934e64a587d0f7c56598c9",
+          "usageKey": "asset:model:topology:bf8d0be3-54a1-4062-a6ca-a2ab919ceea1"
+        }
+      },
+      "createdAt": 1794713510380,
+      "updatedAt": 1794713662985,
+      "executionDurationMs": 146124,
+      "resumed": false,
+      "status": "success",
+      "phase": "succeeded",
+      "algorithm": 0,
+      "faceCount": 2000,
+      "genQuality": 2,
+      "style": 2,
+      "telemetryContext": {
+        "enterMethod": "new_create"
+      },
+      "input": {
+        "prompt": "高品质十九世纪伦敦黑色四轮出租马车与马车夫组合，两匹深棕马牵引，马车夫穿长外套戴礼帽坐在前座，皮革车厢、黄铜灯、木轮与缰绳细节完整，停驻姿态，写实英伦侦探游戏风格，完整组合，不要环境底座"
+      },
+      "queue": {
+        "jobId": "93202711042"
+      },
+      "image": {
+        "taskId": "11864467145218",
+        "uri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/9723f709cb3441829531fd6779afe24a.png",
+        "creationsId": "94026593026"
+      },
+      "model": {
+        "attempt": 1,
+        "taskId": "11803426852610",
+        "uri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/ppl_atom_task_93038711042.glb",
+        "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/9325822830fd4953b4b5cc9c129be76e.png",
+        "creationsId": "94026593026",
+        "scale": {
+          "x": 2.2360146310065185,
+          "y": 2.2360146310065185,
+          "z": 2.2360146310065185
+        }
+      },
+      "terminalAt": 1794713662985
+    },
+    {
+      "id": "fd6cf73c-efd5-456e-b156-c64053bfaf7d",
+      "workspaceId": "workspace_xb69r4cy",
+      "cost": {
+        "threadId": "direct-model-fd6cf73c-efd5-456e-b156-c64053bfaf7d",
+        "traceId": "eeaa6bfabae54068be689a343237c280",
+        "worldId": "11823438033154",
+        "startReported": true,
+        "endReported": true,
+        "jobIds": [
+          "94016909570"
+        ]
+      },
+      "billing": {
+        "phase": "finished",
+        "lease": {
+          "userId": "1273678281048419",
+          "threadId": "direct-model-fd6cf73c-efd5-456e-b156-c64053bfaf7d",
+          "traceId": "eeaa6bfabae54068be689a343237c280",
+          "usageKey": "asset:model:topology:fd6cf73c-efd5-456e-b156-c64053bfaf7d"
+        }
+      },
+      "createdAt": 1794713510078,
+      "updatedAt": 1794713664727,
+      "executionDurationMs": 148239,
+      "resumed": false,
+      "status": "success",
+      "phase": "succeeded",
+      "algorithm": 0,
+      "faceCount": 2000,
+      "genQuality": 2,
+      "style": 2,
+      "telemetryContext": {
+        "enterMethod": "new_create"
+      },
+      "input": {
+        "prompt": "高品质维多利亚时代伦敦街头市集与市民组合，木质蔬果摊、旧布雨棚、木箱麻袋、报纸架，包含报童、卖花女、摊贩与两名路过市民，人物穿十九世纪英伦服装，生活化站立姿态，写实侦探游戏风格，完整街景组合，不要大面积地面底座"
+      },
+      "queue": {
+        "jobId": "94016909570"
+      },
+      "image": {
+        "taskId": "11865542252546",
+        "uri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/0121e5d30e714717933d840491735dde.png",
+        "creationsId": "94016910082"
+      },
+      "model": {
+        "attempt": 1,
+        "taskId": "11778075150850",
+        "uri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/ppl_atom_task_94023634434.glb",
+        "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/e5b94ac3616b4f27837a0789ffa56bd3.png",
+        "creationsId": "94016910082",
+        "scale": {
+          "x": 2.386386784803195,
+          "y": 2.386386784803195,
+          "z": 2.386386784803195
+        }
+      },
+      "terminalAt": 1794713664727
+    },
+    {
+      "id": "f1e37913-62f4-46a6-bb3f-1189a15e2323",
+      "workspaceId": "workspace_c4sgzr9y",
+      "cost": {
+        "threadId": "direct-model-f1e37913-62f4-46a6-bb3f-1189a15e2323",
+        "traceId": "ad69ba70802740e5b35e7b873325c90b",
+        "worldId": "11823438033154",
+        "startReported": true,
+        "endReported": true,
+        "jobIds": [
+          "93656973570"
+        ]
+      },
+      "billing": {
+        "phase": "finished",
+        "lease": {
+          "userId": "1273678281048419",
+          "threadId": "direct-model-f1e37913-62f4-46a6-bb3f-1189a15e2323",
+          "traceId": "ad69ba70802740e5b35e7b873325c90b",
+          "usageKey": "asset:model:topology:f1e37913-62f4-46a6-bb3f-1189a15e2323"
+        }
+      },
+      "createdAt": 1794713332635,
+      "updatedAt": 1794713481649,
+      "executionDurationMs": 141115,
+      "resumed": false,
+      "status": "success",
+      "phase": "succeeded",
+      "algorithm": 0,
+      "faceCount": 2000,
+      "genQuality": 2,
+      "style": 2,
+      "telemetryContext": {
+        "enterMethod": "new_create"
+      },
+      "input": {
+        "prompt": "高品质维多利亚时代伦敦街角酒馆建筑，三层红砖与深色木梁立面，底层有清晰酒馆入口、凸窗、黄铜壁灯、木质悬挂招牌支架，屋顶烟囱，潮湿石材基座，写实英伦侦探游戏风格，完整单体，比例适合城市街区，不要人物，不要环境底座"
+      },
+      "queue": {
+        "jobId": "93656973570"
+      },
+      "image": {
+        "taskId": "11898541550594",
+        "uri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/442e144224744baabf38084fb0ecf5ca.png",
+        "creationsId": "93036412674"
+      },
+      "model": {
+        "attempt": 1,
+        "taskId": "11785493973250",
+        "uri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/ppl_atom_task_94023615234.glb",
+        "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/c62a157a8a174118a5e47443b9cacd7a.png",
+        "creationsId": "93036412674",
+        "scale": {
+          "x": 5.733792879099625,
+          "y": 5.733792879099625,
+          "z": 5.733792879099625
+        }
+      },
+      "terminalAt": 1794713481649
+    },
+    {
+      "id": "ad2a44ff-c771-4cdd-a930-c672c12c158f",
+      "workspaceId": "workspace_qdvadrrs",
+      "cost": {
+        "threadId": "direct-model-ad2a44ff-c771-4cdd-a930-c672c12c158f",
+        "traceId": "8f5e22c2ea2d439884ad6c313ff71c1c",
+        "worldId": "11823438033154",
+        "startReported": true,
+        "endReported": true,
+        "jobIds": [
+          "93465548034"
+        ]
+      },
+      "billing": {
+        "phase": "finished",
+        "lease": {
+          "userId": "1273678281048419",
+          "threadId": "direct-model-ad2a44ff-c771-4cdd-a930-c672c12c158f",
+          "traceId": "8f5e22c2ea2d439884ad6c313ff71c1c",
+          "usageKey": "asset:model:topology:ad2a44ff-c771-4cdd-a930-c672c12c158f"
+        }
+      },
+      "createdAt": 1794653281752,
+      "updatedAt": 1794653464555,
+      "executionDurationMs": 174878,
+      "resumed": false,
+      "status": "success",
+      "phase": "succeeded",
+      "algorithm": 0,
+      "faceCount": 2000,
+      "genQuality": 2,
+      "style": 2,
+      "telemetryContext": {
+        "enterMethod": "new_create"
+      },
+      "input": {
+        "prompt": "维多利亚时代恩肖宅邸，多层红砖庄园，深灰坡屋顶、多根烟囱、石质门廊与爬藤，独立完整建筑，正面入口清晰，无地面无人物",
+        "imageUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/bd6e3e9c2fcc4f22b465dc6a5b61a7b9.png"
+      },
+      "queue": {
+        "jobId": "93465548034"
+      },
+      "image": {
+        "taskId": "11803425912066",
+        "uri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/8112f3754bfd4937868bccf9fe39a8cf.png",
+        "creationsId": "92523025154"
+      },
+      "model": {
+        "attempt": 1,
+        "taskId": "11756839012098",
+        "uri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/ppl_atom_task_93380580610.glb",
+        "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/8fc70f3c7ddb4aceaabd4fda6fdac2e8.png",
+        "creationsId": "92523025154",
+        "scale": {
+          "x": 9.874808908891005,
+          "y": 9.874808908891005,
+          "z": 9.874808908891005
+        }
+      },
+      "terminalAt": 1794653464555
+    },
+    {
+      "id": "0c66bb08-86e0-4950-822b-4ebe968cd33c",
+      "workspaceId": "workspace_dpjunwgr",
+      "cost": {
+        "threadId": "direct-model-0c66bb08-86e0-4950-822b-4ebe968cd33c",
+        "traceId": "56de769d633c4d8ba48e7888f22e3108",
+        "worldId": "11823438033154",
+        "startReported": true,
+        "endReported": true,
+        "jobIds": [
+          "94290704642"
+        ]
+      },
+      "billing": {
+        "phase": "finished",
+        "lease": {
+          "userId": "1273678281048419",
+          "threadId": "direct-model-0c66bb08-86e0-4950-822b-4ebe968cd33c",
+          "traceId": "56de769d633c4d8ba48e7888f22e3108",
+          "usageKey": "asset:model:topology:0c66bb08-86e0-4950-822b-4ebe968cd33c"
+        }
+      },
+      "createdAt": 1794653280321,
+      "updatedAt": 1794653450050,
+      "executionDurationMs": 161366,
+      "resumed": false,
+      "status": "success",
+      "phase": "succeeded",
+      "algorithm": 0,
+      "faceCount": 2000,
+      "genQuality": 2,
+      "style": 2,
+      "telemetryContext": {
+        "enterMethod": "new_create"
+      },
+      "input": {
+        "prompt": "维多利亚时代伦敦警察局，三层红砖市政建筑，深灰屋顶、石质窗框、中央拱门与徽章位置，独立完整建筑，正面入口清晰，无地面无人物",
+        "imageUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/5361ff6983384d5c91c506bd958dc763.png"
+      },
+      "queue": {
+        "jobId": "94290704642"
+      },
+      "image": {
+        "taskId": "11785485315074",
+        "uri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/c95cb71cf19e489983d2e1a24036cec9.png",
+        "creationsId": "93463181826"
+      },
+      "model": {
+        "attempt": 1,
+        "taskId": "11898540747522",
+        "uri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/ppl_atom_task_94290717954.glb",
+        "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/5ff148678c584e00b0d72c22ec848ec3.png",
+        "creationsId": "93463181826",
+        "scale": {
+          "x": 8.771454338504471,
+          "y": 8.771454338504471,
+          "z": 8.771454338504471
+        }
+      },
+      "terminalAt": 1794653450050
+    },
+    {
+      "id": "a744c596-60dd-4fc2-99fc-44d0e98ce652",
+      "workspaceId": "workspace_kuoetfco",
+      "cost": {
+        "threadId": "direct-model-a744c596-60dd-4fc2-99fc-44d0e98ce652",
+        "traceId": "3db0f4eb53ee43dfbaa08cf50539b288",
+        "worldId": "11823438033154",
+        "startReported": true,
+        "endReported": true,
+        "jobIds": [
+          "93021001986"
+        ]
+      },
+      "billing": {
+        "phase": "finished",
+        "lease": {
+          "userId": "1273678281048419",
+          "threadId": "direct-model-a744c596-60dd-4fc2-99fc-44d0e98ce652",
+          "traceId": "3db0f4eb53ee43dfbaa08cf50539b288",
+          "usageKey": "asset:model:topology:a744c596-60dd-4fc2-99fc-44d0e98ce652"
+        }
+      },
+      "createdAt": 1794653279989,
+      "updatedAt": 1794653471942,
+      "executionDurationMs": 184229,
+      "resumed": false,
+      "status": "success",
+      "phase": "succeeded",
+      "algorithm": 0,
+      "faceCount": 2000,
+      "genQuality": 2,
+      "style": 2,
+      "telemetryContext": {
+        "enterMethod": "new_create"
+      },
+      "input": {
+        "prompt": "泰晤士河旧船屋，高脚木构船坞，风化深色木板墙、人字坡屋顶、临水大门与侧面小平台，独立完整建筑，入口清晰，无水面无地面无人物",
+        "imageUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/d6aaf38f6a8147738ffde82b06a5612d.png"
+      },
+      "queue": {
+        "jobId": "93021001986"
+      },
+      "image": {
+        "taskId": "11785493022722",
+        "uri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/90c59f1b83e9419290bad377c620a85c.png",
+        "creationsId": "92852340738"
+      },
+      "model": {
+        "attempt": 1,
+        "taskId": "11785485315842",
+        "uri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/ppl_atom_task_93023881730.glb",
+        "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/196a574741054b0393bc748a011a8149.png",
+        "creationsId": "92852340738",
+        "scale": {
+          "x": 3.290996153138912,
+          "y": 3.290996153138912,
+          "z": 3.290996153138912
+        }
+      },
+      "terminalAt": 1794653471942
+    },
+    {
+      "id": "9e946be0-aed2-4508-bf63-6b9739dd1964",
+      "workspaceId": "workspace_ku1ur254",
+      "cost": {
+        "threadId": "direct-model-9e946be0-aed2-4508-bf63-6b9739dd1964",
+        "traceId": "a95f2deccd644b84aaacc9eca65423b2",
+        "worldId": "11823438033154",
+        "startReported": true,
+        "endReported": true,
+        "jobIds": [
+          "93278693122"
+        ]
+      },
+      "billing": {
+        "phase": "finished",
+        "lease": {
+          "userId": "1273678281048419",
+          "threadId": "direct-model-9e946be0-aed2-4508-bf63-6b9739dd1964",
+          "traceId": "a95f2deccd644b84aaacc9eca65423b2",
+          "usageKey": "asset:model:topology:9e946be0-aed2-4508-bf63-6b9739dd1964"
+        }
+      },
+      "createdAt": 1794653279932,
+      "updatedAt": 1794653460649,
+      "executionDurationMs": 172963,
+      "resumed": false,
+      "status": "success",
+      "phase": "succeeded",
+      "algorithm": 0,
+      "faceCount": 2000,
+      "genQuality": 2,
+      "style": 2,
+      "telemetryContext": {
+        "enterMethod": "new_create"
+      },
+      "input": {
+        "prompt": "1890年代伦敦报社与印刷所，两层浅色石砌工业建筑，拱形大窗、钟形山墙、后部印刷车间烟囱，独立完整建筑，正面入口清晰，无地面无人物",
+        "imageUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/9bfee5d33a6e4586a4d3547d1dbee224.png"
+      },
+      "queue": {
+        "jobId": "93278693122"
+      },
+      "image": {
+        "taskId": "11864466293250",
+        "uri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/d4d3ab9343b5431ab263c5a899426710.png",
+        "creationsId": "93023870210"
+      },
+      "model": {
+        "attempt": 1,
+        "taskId": "11864466294018",
+        "uri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/ppl_atom_task_94290718466.glb",
+        "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/a2a2845269714461b2909aaa18478e96.png",
+        "creationsId": "93023870210",
+        "scale": {
+          "x": 9.828714736528337,
+          "y": 9.828714736528337,
+          "z": 9.828714736528337
+        }
+      },
+      "terminalAt": 1794653460649
+    },
+    {
+      "id": "e107f9a4-d09e-4103-8378-300025486ad1",
+      "workspaceId": "workspace_mklyv9lz",
+      "cost": {
+        "threadId": "direct-model-e107f9a4-d09e-4103-8378-300025486ad1",
+        "traceId": "0edb702b3d3749a89771821546a182f5",
+        "worldId": "11823438033154",
+        "startReported": true,
+        "endReported": true,
+        "jobIds": [
+          "93121810434"
+        ]
+      },
+      "billing": {
+        "phase": "finished",
+        "lease": {
+          "userId": "1273678281048419",
+          "threadId": "direct-model-e107f9a4-d09e-4103-8378-300025486ad1",
+          "traceId": "0edb702b3d3749a89771821546a182f5",
+          "usageKey": "asset:model:topology:e107f9a4-d09e-4103-8378-300025486ad1"
+        }
+      },
+      "createdAt": 1794653255084,
+      "updatedAt": 1794653413193,
+      "executionDurationMs": 150470,
+      "resumed": false,
+      "status": "success",
+      "phase": "succeeded",
+      "algorithm": 0,
+      "faceCount": 2000,
+      "genQuality": 2,
+      "style": 2,
+      "telemetryContext": {
+        "enterMethod": "new_create"
+      },
+      "input": {
+        "prompt": "维多利亚时代伦敦侦探事务所，三层红砖石饰建筑，深灰曼萨德屋顶，烟囱、凸窗、黄铜门牌，独立完整建筑，正面入口清晰，无地面无人物",
+        "imageUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/1ecc47043f1d463c8498a5d202ab4cb6.png"
+      },
+      "queue": {
+        "jobId": "93121810434"
+      },
+      "image": {
+        "taskId": "11807465093122",
+        "uri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/4d0c5613f86645ae80698672242e2f95.png",
+        "creationsId": "93187343362"
+      },
+      "model": {
+        "attempt": 1,
+        "taskId": "11785493022978",
+        "uri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/ppl_atom_task_94010726914.glb",
+        "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/89d3a25a37b44f7ebf3619cf54990c1d.png",
+        "creationsId": "93187343362",
+        "scale": {
+          "x": 6.686780609397367,
+          "y": 6.686780609397367,
+          "z": 6.686780609397367
+        }
+      },
+      "terminalAt": 1794653413193
+    },
+    {
+      "id": "1a7a8b19-4906-42ce-b2af-650c0f4d02cb",
+      "workspaceId": "workspace_yvs0lhzy",
+      "cost": {
+        "threadId": "direct-model-1a7a8b19-4906-42ce-b2af-650c0f4d02cb",
+        "traceId": "6ebd276217fb4cc7a7b22ff8705504f9",
+        "worldId": "11823438033154",
+        "startReported": true,
+        "endReported": true,
+        "jobIds": [
+          "93462907650"
+        ]
+      },
+      "billing": {
+        "phase": "finished",
+        "lease": {
+          "userId": "1273678281048419",
+          "threadId": "direct-model-1a7a8b19-4906-42ce-b2af-650c0f4d02cb",
+          "traceId": "6ebd276217fb4cc7a7b22ff8705504f9",
+          "usageKey": "asset:model:topology:1a7a8b19-4906-42ce-b2af-650c0f4d02cb"
+        }
+      },
+      "createdAt": 1794650602550,
+      "updatedAt": 1794650755652,
+      "executionDurationMs": 146668,
+      "resumed": false,
+      "status": "success",
+      "phase": "succeeded",
+      "algorithm": 0,
+      "faceCount": 2000,
+      "genQuality": 2,
+      "style": 2,
+      "telemetryContext": {
+        "enterMethod": "pgc_new_create"
+      },
+      "input": {
+        "prompt": "",
+        "imageUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/3709f5b5e68d428fb7748b404d8ff30b.png"
+      },
+      "queue": {
+        "jobId": "93462907650"
+      },
+      "image": {
+        "taskId": "11778112494850",
+        "uri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/1d8df46e737c4a5d9ff5d60f1833d2e5.png",
+        "creationsId": "93277987586"
+      },
+      "model": {
+        "attempt": 1,
+        "taskId": "11865579741698",
+        "uri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/ppl_atom_task_94290490114.glb",
+        "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/6b1e2f007c7d4d7b98a7f81b2cb9d6cf.png",
+        "creationsId": "93277987586",
+        "scale": {
+          "x": 11.944456512353149,
+          "y": 11.944456512353149,
+          "z": 11.944456512353149
+        }
+      },
+      "terminalAt": 1794650755652
+    },
+    {
+      "id": "f29445bf-3dba-4128-8d91-1c9cac69f15c",
+      "workspaceId": "workspace_ouyqkhuw",
+      "cost": {
+        "threadId": "direct-model-f29445bf-3dba-4128-8d91-1c9cac69f15c",
+        "traceId": "3234dfc7c38a466aa19a8393d933ecac",
+        "worldId": "11823438033154",
+        "startReported": true,
+        "endReported": true,
+        "jobIds": [
+          "92852065026"
+        ]
+      },
+      "billing": {
+        "phase": "finished",
+        "lease": {
+          "userId": "1273678281048419",
+          "threadId": "direct-model-f29445bf-3dba-4128-8d91-1c9cac69f15c",
+          "traceId": "3234dfc7c38a466aa19a8393d933ecac",
+          "usageKey": "asset:model:topology:f29445bf-3dba-4128-8d91-1c9cac69f15c"
+        }
+      },
+      "createdAt": 1794650602234,
+      "updatedAt": 1794650752874,
+      "executionDurationMs": 144211,
+      "resumed": false,
+      "status": "success",
+      "phase": "succeeded",
+      "algorithm": 0,
+      "faceCount": 2000,
+      "genQuality": 2,
+      "style": 2,
+      "telemetryContext": {
+        "enterMethod": "pgc_new_create"
+      },
+      "input": {
+        "prompt": "",
+        "imageUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/81f7556a1c804e77a1dfd7913ec7ba44.png"
+      },
+      "queue": {
+        "jobId": "92852065026"
+      },
+      "image": {
+        "taskId": "11778112494594",
+        "uri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/e5ce696b60364776ae1fcc4313c7d6aa.png",
+        "creationsId": "93461296386"
+      },
+      "model": {
+        "attempt": 1,
+        "taskId": "11865579740674",
+        "uri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/ppl_atom_task_93380354562.glb",
+        "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/a46126ad6bfd49d4b02abee4a351a187.png",
+        "creationsId": "93461296386",
+        "scale": {
+          "x": 3.983067082498022,
+          "y": 3.983067082498022,
+          "z": 3.983067082498022
+        }
+      },
+      "terminalAt": 1794650752874
+    },
+    {
+      "id": "b78787cf-5ce4-4e9b-b616-c6ca5f1aa04a",
+      "workspaceId": "workspace_x9gvb2uv",
+      "cost": {
+        "threadId": "direct-model-b78787cf-5ce4-4e9b-b616-c6ca5f1aa04a",
+        "traceId": "7c069a1ff2804076adc9a76d02684e93",
+        "worldId": "11823438033154",
+        "startReported": true,
+        "endReported": true,
+        "jobIds": [
+          "93462907394"
+        ]
+      },
+      "billing": {
+        "phase": "finished",
+        "lease": {
+          "userId": "1273678281048419",
+          "threadId": "direct-model-b78787cf-5ce4-4e9b-b616-c6ca5f1aa04a",
+          "traceId": "7c069a1ff2804076adc9a76d02684e93",
+          "usageKey": "asset:model:topology:b78787cf-5ce4-4e9b-b616-c6ca5f1aa04a"
+        }
+      },
+      "createdAt": 1794650602230,
+      "updatedAt": 1794650796059,
+      "executionDurationMs": 187111,
+      "resumed": false,
+      "status": "success",
+      "phase": "succeeded",
+      "algorithm": 0,
+      "faceCount": 2000,
+      "genQuality": 2,
+      "style": 2,
+      "telemetryContext": {
+        "enterMethod": "pgc_new_create"
+      },
+      "input": {
+        "prompt": "",
+        "imageUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/2b4e89baa2fa4cc3be5a4c27c4a069c7.png"
+      },
+      "queue": {
+        "jobId": "93462907394"
+      },
+      "image": {
+        "taskId": "11807464988674",
+        "uri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/bcf11ece08e94143b1ea8691a4ff92d3.png",
+        "creationsId": "93465269250"
+      },
+      "model": {
+        "attempt": 1,
+        "taskId": "11864466216194",
+        "uri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/ppl_atom_task_94003588098.glb",
+        "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/0067a2a7fe2d42de95fdfea412179c9a.png",
+        "creationsId": "93465269250",
+        "scale": {
+          "x": 3.8868305973055253,
+          "y": 3.8868305973055253,
+          "z": 3.8868305973055253
+        }
+      },
+      "terminalAt": 1794650796059
+    },
+    {
+      "id": "4a67afbb-46fb-4284-8d20-f2089910ed4e",
+      "workspaceId": "workspace_rsayv6jr",
+      "cost": {
+        "threadId": "direct-model-4a67afbb-46fb-4284-8d20-f2089910ed4e",
+        "traceId": "4fd77217b1874dafb72d969a7638ec04",
+        "worldId": "11823438033154",
+        "startReported": true,
+        "endReported": true,
+        "jobIds": [
+          "93461295874"
+        ]
+      },
+      "billing": {
+        "phase": "finished",
+        "lease": {
+          "userId": "1273678281048419",
+          "threadId": "direct-model-4a67afbb-46fb-4284-8d20-f2089910ed4e",
+          "traceId": "4fd77217b1874dafb72d969a7638ec04",
+          "usageKey": "asset:model:topology:4a67afbb-46fb-4284-8d20-f2089910ed4e"
+        }
+      },
+      "createdAt": 1794650602108,
+      "updatedAt": 1794650799462,
+      "executionDurationMs": 190846,
+      "resumed": false,
+      "status": "success",
+      "phase": "succeeded",
+      "algorithm": 0,
+      "faceCount": 2000,
+      "genQuality": 2,
+      "style": 2,
+      "telemetryContext": {
+        "enterMethod": "pgc_new_create"
+      },
+      "input": {
+        "prompt": "",
+        "imageUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/31ed9e68970744e597104b7e2b00fc2f.png"
+      },
+      "queue": {
+        "jobId": "93461295874"
+      },
+      "image": {
+        "taskId": "11778112494338",
+        "uri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/4d213147367948558bef8a7bdd200f00.png",
+        "creationsId": "93462908418"
+      },
+      "model": {
+        "attempt": 1,
+        "taskId": "11865579742210",
+        "uri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/ppl_atom_task_94007539714.glb",
+        "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/928f8a657ffb4f91abfae55ab533ee75.png",
+        "creationsId": "93462908418",
+        "scale": {
+          "x": 24.137279796695275,
+          "y": 24.137279796695275,
+          "z": 24.137279796695275
+        }
+      },
+      "terminalAt": 1794650799462
+    },
+    {
+      "id": "e82c010e-d21f-42e4-aa24-5405e3a367e3",
+      "workspaceId": "workspace_fyvazb7q",
+      "cost": {
+        "threadId": "direct-model-e82c010e-d21f-42e4-aa24-5405e3a367e3",
+        "traceId": "27c952b779394bc0a2978dfd953cc4c2",
+        "worldId": "11823438033154",
+        "startReported": true,
+        "endReported": true,
+        "jobIds": [
+          "93572368130"
+        ]
+      },
+      "billing": {
+        "phase": "finished",
+        "lease": {
+          "userId": "1273678281048419",
+          "threadId": "direct-model-e82c010e-d21f-42e4-aa24-5405e3a367e3",
+          "traceId": "27c952b779394bc0a2978dfd953cc4c2",
+          "usageKey": "asset:model:topology:e82c010e-d21f-42e4-aa24-5405e3a367e3"
+        }
+      },
+      "createdAt": 1794650601686,
+      "updatedAt": 1794650752483,
+      "executionDurationMs": 144395,
+      "resumed": false,
+      "status": "success",
+      "phase": "succeeded",
+      "algorithm": 0,
+      "faceCount": 2000,
+      "genQuality": 2,
+      "style": 2,
+      "telemetryContext": {
+        "enterMethod": "pgc_new_create"
+      },
+      "input": {
+        "prompt": "",
+        "imageUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/d65896a98ab94b1d81466bcc271049f9.png"
+      },
+      "queue": {
+        "jobId": "93572368130"
+      },
+      "image": {
+        "taskId": "11807464988418",
+        "uri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/3e89dbc0ef43464db5f9f40bb47913d9.png",
+        "creationsId": "92852065538"
+      },
+      "model": {
+        "attempt": 1,
+        "taskId": "11803425810434",
+        "uri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/ppl_atom_task_93020785666.glb",
+        "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/fbfd873743974ed288792d33f840b1d6.png",
+        "creationsId": "92852065538",
+        "scale": {
+          "x": 3.18471337015386,
+          "y": 3.18471337015386,
+          "z": 3.18471337015386
+        }
+      },
+      "terminalAt": 1794650752483
+    },
+    {
+      "id": "48a3a96d-d488-4f87-b7a2-aba5b9a6bdb0",
+      "workspaceId": "workspace_hf763278",
+      "cost": {
+        "threadId": "direct-model-48a3a96d-d488-4f87-b7a2-aba5b9a6bdb0",
+        "traceId": "0bbf245c8fa24958bb6f6f870317bdfd",
+        "worldId": "11823438033154",
+        "startReported": true,
+        "endReported": true,
+        "jobIds": [
+          "93187066370"
+        ]
+      },
+      "billing": {
+        "phase": "finished",
+        "lease": {
+          "userId": "1273678281048419",
+          "threadId": "direct-model-48a3a96d-d488-4f87-b7a2-aba5b9a6bdb0",
+          "traceId": "0bbf245c8fa24958bb6f6f870317bdfd",
+          "usageKey": "asset:model:topology:48a3a96d-d488-4f87-b7a2-aba5b9a6bdb0"
+        }
+      },
+      "createdAt": 1794650601633,
+      "updatedAt": 1794650764778,
+      "executionDurationMs": 156520,
+      "resumed": false,
+      "status": "success",
+      "phase": "succeeded",
+      "algorithm": 0,
+      "faceCount": 2000,
+      "genQuality": 2,
+      "style": 2,
+      "telemetryContext": {
+        "enterMethod": "pgc_new_create"
+      },
+      "input": {
+        "prompt": "",
+        "imageUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/74b1aa14ffa0477a8e9955c03dbfd068.png"
+      },
+      "queue": {
+        "jobId": "93187066370"
+      },
+      "image": {
+        "taskId": "11802488790530",
+        "uri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/c58ea9df5b5f4402b3b137f5e9df6880.png",
+        "creationsId": "93916454914"
+      },
+      "model": {
+        "attempt": 1,
+        "taskId": "11802488791298",
+        "uri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/ppl_atom_task_93022236162.glb",
+        "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/d62955e41dc34d6ba22371dbc5a76869.png",
+        "creationsId": "93916454914",
+        "scale": {
+          "x": 11.687505877812555,
+          "y": 11.687505877812555,
+          "z": 11.687505877812555
+        }
+      },
+      "terminalAt": 1794650764778
+    },
+    {
+      "id": "67184a1a-e50d-4dc0-84cb-9c522d1c6259",
+      "workspaceId": "workspace_qftozic3",
+      "cost": {
+        "threadId": "direct-model-67184a1a-e50d-4dc0-84cb-9c522d1c6259",
+        "traceId": "7d97cf1c06404954bdec21937580900a",
+        "worldId": "11823438033154",
+        "startReported": true,
+        "endReported": true,
+        "jobIds": [
+          "92521310978"
+        ]
+      },
+      "billing": {
+        "phase": "finished",
+        "lease": {
+          "userId": "1273678281048419",
+          "threadId": "direct-model-67184a1a-e50d-4dc0-84cb-9c522d1c6259",
+          "traceId": "7d97cf1c06404954bdec21937580900a",
+          "usageKey": "asset:model:topology:67184a1a-e50d-4dc0-84cb-9c522d1c6259"
+        }
+      },
+      "createdAt": 1794650601419,
+      "updatedAt": 1794650801601,
+      "executionDurationMs": 193824,
+      "resumed": false,
+      "status": "success",
+      "phase": "succeeded",
+      "algorithm": 0,
+      "faceCount": 2000,
+      "genQuality": 2,
+      "style": 2,
+      "telemetryContext": {
+        "enterMethod": "pgc_new_create"
+      },
+      "input": {
+        "prompt": "",
+        "imageUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/1aa09b65740843178d0ae5ba241daf04.png"
+      },
+      "queue": {
+        "jobId": "92521310978"
+      },
+      "image": {
+        "taskId": "11865579739650",
+        "uri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/3052cc0864ac451884c1be6ed12fd20d.png",
+        "creationsId": "93380342274"
+      },
+      "model": {
+        "attempt": 1,
+        "taskId": "11898540663042",
+        "uri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/ppl_atom_task_93020791042.glb",
+        "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/941a2a367e18462087869b03afe59813.png",
+        "creationsId": "93380342274",
+        "scale": {
+          "x": 0.31828737278407654,
+          "y": 0.31828737278407654,
+          "z": 0.31828737278407654
+        }
+      },
+      "terminalAt": 1794650801601
+    },
+    {
+      "id": "09ab1e94-adff-4c58-8635-517a9f2f21dc",
+      "workspaceId": "workspace_solcqjjh",
+      "cost": {
+        "threadId": "direct-model-09ab1e94-adff-4c58-8635-517a9f2f21dc",
+        "traceId": "cbbd2ee5fc11477e888037c25fb37dd9",
+        "worldId": "11823438033154",
+        "startReported": true,
+        "endReported": true,
+        "jobIds": [
+          "93462907138"
+        ]
+      },
+      "billing": {
+        "phase": "finished",
+        "lease": {
+          "userId": "1273678281048419",
+          "threadId": "direct-model-09ab1e94-adff-4c58-8635-517a9f2f21dc",
+          "traceId": "cbbd2ee5fc11477e888037c25fb37dd9",
+          "usageKey": "asset:model:topology:09ab1e94-adff-4c58-8635-517a9f2f21dc"
+        }
+      },
+      "createdAt": 1794650601315,
+      "updatedAt": 1794650769227,
+      "executionDurationMs": 161537,
+      "resumed": false,
+      "status": "success",
+      "phase": "succeeded",
+      "algorithm": 0,
+      "faceCount": 2000,
+      "genQuality": 2,
+      "style": 2,
+      "telemetryContext": {
+        "enterMethod": "pgc_new_create"
+      },
+      "input": {
+        "prompt": "",
+        "imageUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/8978cf23b70849a09a28f654822383f2.png"
+      },
+      "queue": {
+        "jobId": "93462907138"
+      },
+      "image": {
+        "taskId": "11803425808642",
+        "uri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/c5150b3074064574bd01f5f07bcecdfd.png",
+        "creationsId": "93575049730"
+      },
+      "model": {
+        "attempt": 1,
+        "taskId": "11785492914690",
+        "uri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/ppl_atom_task_94290491394.glb",
+        "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/eec851f1ee6a41a3b2caff2e5637b745.png",
+        "creationsId": "93575049730",
+        "scale": {
+          "x": 20.459678625563605,
+          "y": 20.459678625563605,
+          "z": 20.459678625563605
+        }
+      },
+      "terminalAt": 1794650769227
+    },
+    {
+      "id": "f7d029c2-0cf4-4a13-bfc8-e42c19a39adb",
+      "workspaceId": "workspace_7kuqsy5r",
+      "cost": {
+        "threadId": "direct-model-f7d029c2-0cf4-4a13-bfc8-e42c19a39adb",
+        "traceId": "45e7b52f4d0f4ea3a0ded351972855b4",
+        "worldId": "11823438033154",
+        "startReported": true,
+        "endReported": true,
+        "jobIds": [
+          "93572367874"
+        ]
+      },
+      "billing": {
+        "phase": "finished",
+        "lease": {
+          "userId": "1273678281048419",
+          "threadId": "direct-model-f7d029c2-0cf4-4a13-bfc8-e42c19a39adb",
+          "traceId": "45e7b52f4d0f4ea3a0ded351972855b4",
+          "usageKey": "asset:model:topology:f7d029c2-0cf4-4a13-bfc8-e42c19a39adb"
+        }
+      },
+      "createdAt": 1794650601145,
+      "updatedAt": 1794650758305,
+      "executionDurationMs": 150799,
+      "resumed": false,
+      "status": "success",
+      "phase": "succeeded",
+      "algorithm": 0,
+      "faceCount": 2000,
+      "genQuality": 2,
+      "style": 2,
+      "telemetryContext": {
+        "enterMethod": "pgc_new_create"
+      },
+      "input": {
+        "prompt": "",
+        "imageUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/5bb68124497a42be8424917c828ea43a.png"
+      },
+      "queue": {
+        "jobId": "93572367874"
+      },
+      "image": {
+        "taskId": "11803410408706",
+        "uri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/bf4a4e33d1804a0b882424f0c4ed71ad.png",
+        "creationsId": "93575049218"
+      },
+      "model": {
+        "attempt": 1,
+        "taskId": "11803425810178",
+        "uri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/ppl_atom_task_93378938626.glb",
+        "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/afe7afd76daf424eaa6be0a46d2bca93.png",
+        "creationsId": "93575049218",
+        "scale": {
+          "x": 7.88512490205407,
+          "y": 7.88512490205407,
+          "z": 7.88512490205407
+        }
+      },
+      "terminalAt": 1794650758305
+    }
+  ]
+}

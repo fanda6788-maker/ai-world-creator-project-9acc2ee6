@@ -1,0 +1,1767 @@
+{
+  "version": "1.0.2",
+  "sessions": [
+    {
+      "id": "pcg_session_1794649951190_w4i9z9x8",
+      "title": "维多利亚雾都河港",
+      "turnStage": "failed",
+      "isNewBranch": false,
+      "messages": [
+        {
+          "id": "msg_1794649951192_ly1s00iv",
+          "role": "user",
+          "content": "维多利亚时代伦敦雾都河港，包含侦探事务所、警局、报社、宅邸、法院、车站、酒馆、当铺、仓库与旧船屋，鹅卵石街道连接各区域，泰晤士河、码头和石桥环绕，阴雨薄雾，暖黄煤气灯，高空斜俯视完整地图，高品质3D游戏场景，无居民区、无现代元素。",
+          "createdAt": 1794649951192,
+          "turnId": "turn_1794649939793_aisby5x5",
+          "artifactRefs": [
+            "input_1794649951192_uk0cyr82"
+          ]
+        },
+        {
+          "id": "msg_process_vwtaidcz",
+          "createdAt": 1794649951194,
+          "role": "assistant",
+          "turnId": "turn_1794649939793_aisby5x5",
+          "disclosure": {
+            "version": 1,
+            "status": "cancelled",
+            "activities": [
+              {
+                "id": "tool:call_39ea6b56ed424e4da7d48999",
+                "title": "查阅资料",
+                "status": "completed",
+                "kind": "tool",
+                "order": 1,
+                "icon": "file-search-01",
+                "completedGroupText": "已查阅 {count} 份资料"
+              },
+              {
+                "id": "tool:call_13256d6a53224cf8831e9a54",
+                "title": "使用原图作为地图参考",
+                "status": "completed",
+                "kind": "tool",
+                "order": 3,
+                "icon": "upload-cloud-02"
+              },
+              {
+                "id": "tool:call_ccb453d8a601419e81423171",
+                "title": "生成地形",
+                "status": "completed",
+                "kind": "tool",
+                "order": 5,
+                "icon": "magic-wand-02"
+              },
+              {
+                "id": "tool:call_9da8d7ff6f2344bbb287397b",
+                "title": "解析地表物品",
+                "status": "cancelled",
+                "kind": "tool",
+                "order": 7,
+                "icon": "scan"
+              }
+            ],
+            "commentaryItems": [
+              {
+                "id": "prt_1d9795c950012bmpaRM4FrjtQq",
+                "order": 0,
+                "text": "我先查看你上传的图片，判断它作为地图参考的用途。"
+              },
+              {
+                "id": "prt_1d97980470013LlJRMz8uY12PZ",
+                "order": 2,
+                "text": "这张上传图是一幅完整的雾都河港俯视场景参考，与你的需求高度吻合：河港环岛、石桥码头、车站、宅邸、法院、仓库船屋、煤气灯和阴雨薄雾一应俱全。我直接采用它作为地图参考并继续生成 3D 地形。"
+              },
+              {
+                "id": "prt_1d9798e3e0013IKFf3iUJ7n8ct",
+                "order": 4,
+                "text": "原图已登记为地图参考，正在据此生成 3D 地形。"
+              },
+              {
+                "id": "prt_1d97d9a480018t8Zp29FhTxT0F",
+                "order": 6,
+                "text": "3D 地形已确认，正在解析地表物品并匹配资源。"
+              }
+            ]
+          },
+          "questions": [
+            {
+              "status": "answered",
+              "requestId": "que_1d97ca10c001xgl6n0IdjGPdID",
+              "startedAt": 1794650186302,
+              "items": [
+                {
+                  "pcg": {
+                    "version": 1,
+                    "kind": "terrain",
+                    "terrainArtifactId": "terrain_1794649984605_wrpi0ums"
+                  },
+                  "custom": true,
+                  "header": "3D地形确认",
+                  "multiple": false,
+                  "options": [
+                    {
+                      "description": "确认当前选择",
+                      "label": "确认"
+                    }
+                  ],
+                  "question": "3D地形确认"
+                }
+              ],
+              "endedAt": 1794650244374,
+              "answers": [
+                [
+                  "{\"version\":1,\"kind\":\"terrain\",\"action\":\"confirm\",\"terrainArtifactId\":\"terrain_1794649984605_wrpi0ums\",\"feedback\":\"\"}"
+                ]
+              ]
+            },
+            {
+              "status": "rejected",
+              "requestId": "que_1d97f11f30014S9CXr0FL9chhc",
+              "startedAt": 1794650346279,
+              "items": [
+                {
+                  "pcg": {
+                    "version": 1,
+                    "kind": "scene_assets",
+                    "sprinkleArtifactId": "sprinkle_1794650249814_38505yqx"
+                  },
+                  "custom": true,
+                  "header": "请确认场景物体",
+                  "multiple": false,
+                  "options": [
+                    {
+                      "description": "确认当前选择",
+                      "label": "确认"
+                    }
+                  ],
+                  "question": "请确认场景物体"
+                }
+              ],
+              "endedAt": 1794650357312
+            }
+          ],
+          "executionStartedAt": 1794649963786,
+          "executionDurationMs": 334754.60000002384
+        },
+        {
+          "id": "msg_1794650398571_k1wdf4v3",
+          "role": "user",
+          "content": "使用已生成地形继续生成地表物品。",
+          "createdAt": 1794650398571,
+          "turnId": "turn_1794650396746_qb5ik5ht",
+          "artifactRefs": [
+            "terrain_1794649984605_wrpi0ums"
+          ]
+        },
+        {
+          "id": "msg_process_qml8m121",
+          "createdAt": 1794650398572,
+          "role": "assistant",
+          "turnId": "turn_1794650396746_qb5ik5ht",
+          "disclosure": {
+            "version": 1,
+            "status": "completed",
+            "activities": [
+              {
+                "id": "tool:call_179a04cf77bd429fbc5e044e",
+                "title": "解析地表物品",
+                "status": "completed",
+                "kind": "tool",
+                "order": 1,
+                "icon": "scan"
+              }
+            ],
+            "commentaryItems": [
+              {
+                "id": "prt_1d980143a001Xl0Q0oGTmr6OY3",
+                "order": 0,
+                "text": "收到，使用已确认的 3D 地形重新解析地表物品并匹配资源。"
+              }
+            ]
+          },
+          "questions": [
+            {
+              "status": "answered",
+              "requestId": "que_1d9815bec001sbiHg9VZIfzjjH",
+              "startedAt": 1794650496285,
+              "items": [
+                {
+                  "pcg": {
+                    "version": 1,
+                    "kind": "scene_assets",
+                    "sprinkleArtifactId": "sprinkle_1794650412100_41kzi0xa"
+                  },
+                  "custom": true,
+                  "header": "请确认场景物体",
+                  "multiple": false,
+                  "options": [
+                    {
+                      "description": "确认当前选择",
+                      "label": "确认"
+                    }
+                  ],
+                  "question": "请确认场景物体"
+                }
+              ],
+              "endedAt": 1794650508165,
+              "answers": [
+                [
+                  "{\"version\":1,\"kind\":\"scene_assets\",\"action\":\"confirm\",\"sprinkleArtifactId\":\"sprinkle_1794650412100_41kzi0xa\",\"assetChoices\":[{\"overlayId\":\"火车站建筑_1\",\"placementClass\":\"scatter\",\"selectedAssets\":[{\"id\":\"fe_empty_asset_id_火车站建筑_1_9y0kcnpo\",\"name\":\"火车站建筑\",\"previewUri\":\"tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/31ed9e68970744e597104b7e2b00fc2f.png\",\"isAIPlaceholder\":true}]},{\"overlayId\":\"古典石造建筑_2\",\"placementClass\":\"scatter\",\"selectedAssets\":[{\"id\":\"fe_empty_asset_id_古典石造建筑_2_zidq215r\",\"name\":\"古典石造建筑\",\"previewUri\":\"tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/8978cf23b70849a09a28f654822383f2.png\",\"isAIPlaceholder\":true}]},{\"overlayId\":\"红砖宅邸_3\",\"placementClass\":\"scatter\",\"selectedAssets\":[{\"id\":\"fe_empty_asset_id_红砖宅邸_3_vx4qcyx3\",\"name\":\"红砖宅邸\",\"previewUri\":\"tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/887165f13ae94ee0a9a479653677b1f5.png\",\"isAIPlaceholder\":true}]},{\"overlayId\":\"半木结构小屋_4\",\"placementClass\":\"scatter\",\"selectedAssets\":[{\"id\":\"fe_empty_asset_id_半木结构小屋_4_xuyr9c5b\",\"name\":\"半木结构小屋\",\"previewUri\":\"tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/de046d56dd4d4e978eadb3ea222f5509.png\",\"isAIPlaceholder\":true}]},{\"overlayId\":\"砖砌仓库_5\",\"placementClass\":\"scatter\",\"selectedAssets\":[{\"id\":\"fe_empty_asset_id_砖砌仓库_5_sedog4ju\",\"name\":\"砖砌仓库\",\"previewUri\":\"tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/74b1aa14ffa0477a8e9955c03dbfd068.png\",\"isAIPlaceholder\":true}]},{\"overlayId\":\"码头木棚_6\",\"placementClass\":\"scatter\",\"selectedAssets\":[{\"id\":\"fe_empty_asset_id_码头木棚_6_ajfqlb3c\",\"name\":\"码头木棚\",\"previewUri\":\"tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/2b4e89baa2fa4cc3be5a4c27c4a069c7.png\",\"isAIPlaceholder\":true}]},{\"overlayId\":\"石桥_7\",\"placementClass\":\"scatter\",\"selectedAssets\":[{\"id\":\"fe_empty_asset_id_石桥_7_9tdqj0lf\",\"resourceId\":\"11278740504066\",\"name\":\"国风_石质古代庭院拱桥\",\"previewUri\":\"tos-cn-i-c2ox06qgwk/aigc_editor/88839214b6fb4388a770df064fd36033.png\",\"resourceUri\":\"hamlet-ugc/aigc_editor/dev/unity/11277665302786.glb\",\"dataType\":1,\"style\":2}]},{\"overlayId\":\"码头栈桥_8\",\"placementClass\":\"scatter\",\"selectedAssets\":[{\"id\":\"fe_empty_asset_id_码头栈桥_8_4bhhjhkk\",\"name\":\"码头栈桥\",\"previewUri\":\"tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/d65896a98ab94b1d81466bcc271049f9.png\",\"isAIPlaceholder\":true}]},{\"overlayId\":\"码头起重机_9\",\"placementClass\":\"scatter\",\"selectedAssets\":[{\"id\":\"fe_empty_asset_id_码头起重机_9_r7qpmok7\",\"name\":\"码头起重机\",\"previewUri\":\"tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/5bb68124497a42be8424917c828ea43a.png\",\"isAIPlaceholder\":true}]},{\"overlayId\":\"蒸汽船_10\",\"placementClass\":\"scatter\",\"selectedAssets\":[{\"id\":\"fe_empty_asset_id_蒸汽船_10_e6q7hkne\",\"name\":\"蒸汽船\",\"previewUri\":\"tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/3709f5b5e68d428fb7748b404d8ff30b.png\",\"isAIPlaceholder\":true}]},{\"overlayId\":\"雕像_11\",\"placementClass\":\"scatter\",\"selectedAssets\":[{\"id\":\"fe_empty_asset_id_雕像_11_k90mmqr8\",\"name\":\"雕像\",\"previewUri\":\"tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/81f7556a1c804e77a1dfd7913ec7ba44.png\",\"isAIPlaceholder\":true}]},{\"overlayId\":\"欧式路灯_12\",\"placementClass\":\"scatter\",\"selectedAssets\":[{\"id\":\"fe_empty_asset_id_欧式路灯_12_8pmgvi04\",\"resourceId\":\"2849341845762\",\"name\":\"路灯\",\"previewUri\":\"tos-cn-i-c2ox06qgwk/aigc_editor/227da2b401ff42279cf2c7f78e4c5c08.png\",\"resourceUri\":\"hamlet-ugc/aigc_editor/dev/unity/9754990087938.glb\",\"dataType\":1,\"style\":2}]},{\"overlayId\":\"落叶乔木_13\",\"placementClass\":\"scatter\",\"selectedAssets\":[{\"id\":\"fe_empty_asset_id_落叶乔木_13_j8071y2f\",\"resourceId\":\"8939427842818\",\"name\":\"繁茂金秋叶树\",\"previewUri\":\"tos-cn-i-c2ox06qgwk/aigc_editor/4a84af8a701343d7adc2a0d057730198.png\",\"resourceUri\":\"hamlet-ugc/aigc_editor/dev/unity/8856936972290.glb\",\"dataType\":3,\"style\":4}]},{\"overlayId\":\"灌木绿篱_14\",\"placementClass\":\"insert\",\"selectedAssets\":[{\"id\":\"fe_empty_asset_id_灌木绿篱_14_t53tyie7\",\"resourceId\":\"7325452800770\",\"name\":\"麦冬01\",\"previewUri\":\"tos-cn-i-c2ox06qgwk/aigc_editor/b925f5fb0e8849e995b8bdb7220a331f.png\",\"resourceUri\":\"tos-cn-i-c2ox06qgwk/aigc_editor/d5d3f996600043ddabfc43701be35456.png\",\"dataType\":2,\"style\":4,\"plantType\":3}]},{\"overlayId\":\"货物木箱_15\",\"placementClass\":\"scatter\",\"selectedAssets\":[{\"id\":\"fe_empty_asset_id_货物木箱_15_qgaxj8mk\",\"name\":\"货物木箱\",\"previewUri\":\"tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/1aa09b65740843178d0ae5ba241daf04.png\",\"isAIPlaceholder\":true}]}]}"
+                ]
+              ]
+            }
+          ],
+          "streamBlocks": [
+            {
+              "kind": "text",
+              "content": "本轮已完成：3D 地形与地图输入都已就绪，完整地图预览可在右侧查看，包含雾都河港的建筑分布、码头与街区布局。\n\n部分地表物品暂无匹配资源（共 11 处），但整体地图已可交付。下一步请点击右侧“启用该3D地图”，即可开始物体摆放生成 3D 地图；摆放完成后如需调整个别物体，也可以再继续编辑。"
+            }
+          ],
+          "artifactRefs": [
+            "composed_map_1794650508225_rsiq6xa4"
+          ],
+          "executionStartedAt": 1794650407156,
+          "executionDurationMs": 161446.9999999702
+        },
+        {
+          "id": "msg_1794650589779_tljbgrd8",
+          "role": "user",
+          "content": "启用该地图",
+          "createdAt": 1794650589779,
+          "turnId": "turn_1794650589779_kytd0fi5",
+          "artifactRefs": [
+            "composed_map_1794650508225_rsiq6xa4"
+          ]
+        },
+        {
+          "id": "msg_process_dqi1h0fm",
+          "createdAt": 1794650589780,
+          "role": "assistant",
+          "disclosure": {
+            "version": 1,
+            "status": "failed",
+            "activities": [
+              {
+                "id": "local:60z321d4",
+                "title": "准备地图输入",
+                "status": "failed",
+                "kind": "tool",
+                "order": 0,
+                "icon": "scan"
+              }
+            ],
+            "commentaryItems": []
+          },
+          "streamBlocks": [
+            {
+              "kind": "text",
+              "content": "地图未启用，首次 PCG 摆放失败：Native map has an invalid numeric transform: version 2, node -1457056400, pos。"
+            }
+          ],
+          "executionStartedAt": 1794650598187,
+          "executionDurationMs": 6599.699999988079
+        },
+        {
+          "id": "msg_1794651953799_b5b98yzz",
+          "role": "user",
+          "content": "启用该地图",
+          "createdAt": 1794651953799,
+          "turnId": "turn_1794651953799_jq2r3znu",
+          "artifactRefs": [
+            "composed_map_1794650508225_rsiq6xa4"
+          ]
+        },
+        {
+          "id": "msg_process_2jx0axsh",
+          "createdAt": 1794651953800,
+          "role": "assistant",
+          "disclosure": {
+            "version": 1,
+            "status": "failed",
+            "activities": [
+              {
+                "id": "local:f3pr0y86",
+                "title": "准备地图输入",
+                "status": "failed",
+                "kind": "tool",
+                "order": 0,
+                "icon": "scan"
+              }
+            ],
+            "commentaryItems": []
+          },
+          "streamBlocks": [
+            {
+              "kind": "text",
+              "content": "地图未启用，首次 PCG 摆放失败：Native map has an invalid numeric transform: version 2, node -465382877, pos。"
+            }
+          ],
+          "executionStartedAt": 1794651962413,
+          "executionDurationMs": 286767.40000000596
+        },
+        {
+          "id": "msg_1794652282594_9n66glte",
+          "role": "user",
+          "content": "启用该地图",
+          "createdAt": 1794652282594,
+          "turnId": "turn_1794652282594_pvw2qrpz",
+          "artifactRefs": [
+            "composed_map_1794650508225_rsiq6xa4"
+          ]
+        },
+        {
+          "id": "msg_process_t2qffmr2",
+          "createdAt": 1794652282595,
+          "role": "assistant",
+          "disclosure": {
+            "version": 1,
+            "status": "failed",
+            "activities": [
+              {
+                "id": "local:tycvb5of",
+                "title": "准备地图输入",
+                "status": "failed",
+                "kind": "tool",
+                "order": 0,
+                "icon": "scan"
+              }
+            ],
+            "commentaryItems": []
+          },
+          "streamBlocks": [
+            {
+              "kind": "text",
+              "content": "地图未启用，首次 PCG 摆放失败：Native map has an invalid numeric transform: version 2, node -1902695874, pos。"
+            }
+          ],
+          "executionStartedAt": 1794652291214,
+          "executionDurationMs": 293788.60000002384
+        },
+        {
+          "id": "msg_1794713540690_3xe172wv",
+          "role": "user",
+          "content": "启用该地图",
+          "createdAt": 1794713540690,
+          "turnId": "turn_1794713540690_bujlyzf8",
+          "artifactRefs": [
+            "composed_map_1794650508225_rsiq6xa4"
+          ]
+        },
+        {
+          "id": "msg_process_ozjbc9r7",
+          "createdAt": 1794713540692,
+          "role": "assistant",
+          "disclosure": {
+            "version": 1,
+            "status": "failed",
+            "activities": [
+              {
+                "id": "local:ptmc46cq",
+                "title": "准备地图输入",
+                "status": "failed",
+                "kind": "tool",
+                "order": 0,
+                "icon": "scan"
+              }
+            ],
+            "commentaryItems": []
+          },
+          "streamBlocks": [
+            {
+              "kind": "text",
+              "content": "地图未启用，首次 PCG 摆放失败：Native map has an invalid numeric transform: version 2, node 2084723101, pos。"
+            }
+          ],
+          "executionStartedAt": 1794713549289,
+          "executionDurationMs": 333722.39999997616
+        }
+      ],
+      "artifacts": {
+        "input_1794649951192_uk0cyr82": {
+          "id": "input_1794649951192_uk0cyr82",
+          "kind": "inputImage",
+          "status": "completed",
+          "createdAt": 1794649951192,
+          "updatedAt": 1794649951192,
+          "sourceMessageId": "msg_1794649951192_ly1s00iv",
+          "image": {
+            "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/457641dd5c244865945d9a85bcd97433.png"
+          }
+        },
+        "preview_8kq3yesw": {
+          "id": "preview_8kq3yesw",
+          "kind": "mapPreview",
+          "status": "completed",
+          "createdAt": 1794649981238,
+          "displayTitle": "维多利亚雾都河港",
+          "updatedAt": 1794649981727,
+          "image": {
+            "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/457641dd5c244865945d9a85bcd97433.png"
+          },
+          "prompt": "完整的高空斜俯视维多利亚时代伦敦雾都河港场景：泰晤士河环绕的岛屿城区，鹅卵石街道与广场连接车站、宅邸、法院、警局、酒馆、当铺、仓库与旧船屋，石桥跨河，码头停泊蒸汽船，阴雨薄雾中暖黄煤气灯点亮，无居民区与无现代元素，适合直接作为完整地图布局与风格参考。",
+          "candidateId": "e703f97f-a8c2-420c-a5b9-c4b0a7d232a9",
+          "candidateIndex": 0,
+          "turnId": "turn_1794649939793_aisby5x5"
+        },
+        "terrain_1794649984605_wrpi0ums": {
+          "createdAt": 1794649984605,
+          "heightMap": {
+            "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/80367e0ac3804326864e852ae15205ee.png"
+          },
+          "id": "terrain_1794649984605_wrpi0ums",
+          "kind": "terrain3d",
+          "preview": {
+            "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/0dab79581ca0407784577b8644097c9f.jpeg"
+          },
+          "prompt": "这片被海洋完全环绕的岛屿，外围环布岩石地形构成崎岖岛岸，岸线呈不规则环形，岸坡向海面陡然下降形成多处小型陡崖。岛屿主体为平整石质地的建筑遗址区域，占全岛约七成面积，中心位置是嵌套式八角形平整石质地基，向外延伸出连通全区域的规整石砌道路网络。遗址的各类空置区划内零散分布着草原斑块，多为绿地嵌入硬质石质地的形态，岛屿最外围的边角区域也环绕分布有连片草原，整体地势平缓无明显高差起伏。",
+          "semanticMap": {
+            "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/9b77b179e5d64f8f86c4a7ea33f59851.png"
+          },
+          "sourcePreviewArtifactId": "preview_8kq3yesw",
+          "sourceSceneImage": {
+            "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/457641dd5c244865945d9a85bcd97433.png"
+          },
+          "status": "completed",
+          "terrainLayers": [
+            "Grasslands",
+            "RockyTerrain",
+            "Sea",
+            "Cliff",
+            "Road",
+            "Building"
+          ],
+          "topView": {
+            "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/0dab79581ca0407784577b8644097c9f.jpeg"
+          },
+          "turnId": "turn_1794649939793_aisby5x5",
+          "updatedAt": 1794653060684,
+          "mapSize": 256,
+          "terrainDescription": "这片被海洋完全环绕的岛屿，外围环布岩石地形构成崎岖岛岸，岸线呈不规则环形，岸坡向海面陡然下降形成多处小型陡崖。岛屿主体为平整石质地的建筑遗址区域，占全岛约七成面积，中心位置是嵌套式八角形平整石质地基，向外延伸出连通全区域的规整石砌道路网络。遗址的各类空置区划内零散分布着草原斑块，多为绿地嵌入硬质石质地的形态，岛屿最外围的边角区域也环绕分布有连片草原，整体地势平缓无明显高差起伏。",
+          "terrainTypes": [
+            {
+              "name": "Grasslands",
+              "description": "草原（草地为主，开阔）",
+              "color": "#7CFC00"
+            },
+            {
+              "name": "RockyTerrain",
+              "description": "岩石地形（裸露岩石或石地）",
+              "color": "#808080"
+            },
+            {
+              "name": "Sea",
+              "description": "海洋（外海或大规模水体）",
+              "color": "#0066CC"
+            },
+            {
+              "name": "Cliff",
+              "description": "悬崖（陡峭岩壁，断崖）",
+              "color": "#708090"
+            },
+            {
+              "name": "Road",
+              "description": "道路（公路，交通线路，铺装/土路）",
+              "color": "#725729"
+            },
+            {
+              "name": "Building",
+              "description": "建筑区（建筑密集区域）",
+              "color": "#A0A0A0"
+            }
+          ],
+          "graphId": "45f9f79f-b270-40dd-9ff4-cb7f406c8d42"
+        },
+        "sprinkle_1794650249814_38505yqx": {
+          "id": "sprinkle_1794650249814_38505yqx",
+          "kind": "sprinkle",
+          "status": "completed",
+          "createdAt": 1794650249814,
+          "updatedAt": 1794650345951,
+          "prompt": "",
+          "terrainArtifactId": "terrain_1794649984605_wrpi0ums",
+          "turnId": "turn_1794649939793_aisby5x5",
+          "assetSelections": [
+            {
+              "overlayId": "火车站_1",
+              "assetType": "火车站",
+              "description": "大型红砖建筑，带拱形玻璃屋顶和时钟山墙，内部透出暖黄灯光",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/5312c4e2700249eab687b17c726d6ca6.png"
+              },
+              "color": "#ff00ff",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_火车站_1_p9vr4pfw",
+                  "name": "火车站",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/5312c4e2700249eab687b17c726d6ca6.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "庄园宅邸_2",
+              "assetType": "庄园宅邸",
+              "description": "多层红砖维多利亚风格宅邸，带烟囱和爬藤墙面",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/bd6e3e9c2fcc4f22b465dc6a5b61a7b9.png"
+              },
+              "color": "#00ff77",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_庄园宅邸_2_jwssfasi",
+                  "name": "庄园宅邸",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/bd6e3e9c2fcc4f22b465dc6a5b61a7b9.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "圆顶公共建筑_3",
+              "assetType": "圆顶公共建筑",
+              "description": "大型浅色石砌建筑，带穹顶和柱廊入口",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/293ecf1e60eb40daa7f3b6f393817ede.png"
+              },
+              "color": "#ff0000",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_圆顶公共建筑_3_m3bmmmvx",
+                  "name": "圆顶公共建筑",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/293ecf1e60eb40daa7f3b6f393817ede.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "红砖市政建筑0_4",
+              "assetType": "红砖市政建筑0",
+              "description": "两层红砖建筑，深色曼萨德屋顶，带山墙时钟",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/1ecc47043f1d463c8498a5d202ab4cb6.png"
+              },
+              "color": "#ffffff",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_红砖市政建筑0_4_vjwcnafz",
+                  "name": "红砖市政建筑0",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/1ecc47043f1d463c8498a5d202ab4cb6.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "红砖市政建筑1_5",
+              "assetType": "红砖市政建筑1",
+              "description": "灰顶红砖角楼建筑，浅色石质窗框，体量较大",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/5361ff6983384d5c91c506bd958dc763.png"
+              },
+              "color": "#ffaa22",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_红砖市政建筑1_5_3mwegd2v",
+                  "name": "红砖市政建筑1",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/5361ff6983384d5c91c506bd958dc763.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "半木结构小屋_6",
+              "assetType": "半木结构小屋",
+              "description": "深色半木结构酒馆，白墙木架，透出暖红灯光",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/6cf1c742c6144475b2cc13962c4f7ed1.png"
+              },
+              "color": "#55ffff",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "geometry",
+              "semanticFront": "酒馆正门立面",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_半木结构小屋_6_kwi58a9q",
+                  "name": "半木结构小屋",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/6cf1c742c6144475b2cc13962c4f7ed1.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "小型砖砌商铺_7",
+              "assetType": "小型砖砌商铺",
+              "description": "两层小型砖砌商铺，底层带玻璃橱窗和招牌",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/e69f483e96ae4d69a21107d5a56e9ed9.png"
+              },
+              "color": "#6600ff",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "geometry",
+              "semanticFront": "底层橱窗所在立面",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_小型砖砌商铺_7_zldfi9mz",
+                  "name": "小型砖砌商铺",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/e69f483e96ae4d69a21107d5a56e9ed9.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "石砌仓库_8",
+              "assetType": "石砌仓库",
+              "description": "浅色石砌仓库，带拱窗和钟形山墙，屋顶低平",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/9bfee5d33a6e4586a4d3547d1dbee224.png"
+              },
+              "color": "#000055",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_石砌仓库_8_0nny6m30",
+                  "name": "石砌仓库",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/9bfee5d33a6e4586a4d3547d1dbee224.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "红砖仓库_9",
+              "assetType": "红砖仓库",
+              "description": "长条形红砖仓库，带锯齿形深色屋顶和大拱门",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/e6ce3c6816b6402dac871ba7fdfb09a8.png"
+              },
+              "color": "#00aa00",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_红砖仓库_9_4u4pwtir",
+                  "name": "红砖仓库",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/e6ce3c6816b6402dac871ba7fdfb09a8.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "木船坞_10",
+              "assetType": "木船坞",
+              "description": "高脚木构船坞，人字形波纹屋顶，下悬小船",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/d6aaf38f6a8147738ffde82b06a5612d.png"
+              },
+              "color": "#bb0077",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_木船坞_10_awtjo9yj",
+                  "name": "木船坞",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/d6aaf38f6a8147738ffde82b06a5612d.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "石桥_11",
+              "assetType": "石桥",
+              "description": "多孔石砌拱桥，带雕饰桥栏和桥面车道，跨越水面",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/8cc4761a6d144672ab6f44bd74cf0474.png"
+              },
+              "color": "#eeff77",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "resourceId": "11278740504066",
+                  "name": "国风_石质古代庭院拱桥",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/88839214b6fb4388a770df064fd36033.png",
+                  "resourceUri": "hamlet-ugc/aigc_editor/dev/unity/11277665302786.glb",
+                  "dataType": 1,
+                  "style": 2,
+                  "matchScore": 1,
+                  "id": "fe_empty_asset_id_石桥_11_ifkfsfmm"
+                }
+              ]
+            },
+            {
+              "overlayId": "码头栈桥_12",
+              "assetType": "码头栈桥",
+              "description": "木质高脚栈桥平台，带台阶和桩柱支撑",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/e5b79b79fbfe49548bb03c04b35ab5a9.png"
+              },
+              "color": "#ee77ff",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_码头栈桥_12_xfkj4nog",
+                  "name": "码头栈桥",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/e5b79b79fbfe49548bb03c04b35ab5a9.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "蒸汽船_13",
+              "assetType": "蒸汽船",
+              "description": "深色蒸汽拖船，带烟囱和桅杆，停泊于水面",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/a662b3adbe8e45208bdec34629d3445a.png"
+              },
+              "color": "#ff6688",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_蒸汽船_13_eunawzfp",
+                  "name": "蒸汽船",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/a662b3adbe8e45208bdec34629d3445a.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "纪念雕像_14",
+              "assetType": "纪念雕像",
+              "description": "石座上的深色人物纪念雕像，立于广场中央",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/0cafd8b9477e485181f02ead4bff3c0e.png"
+              },
+              "color": "#6677ff",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_纪念雕像_14_py71asok",
+                  "name": "纪念雕像",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/0cafd8b9477e485181f02ead4bff3c0e.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "喷泉_15",
+              "assetType": "喷泉",
+              "description": "小型多层石制喷泉，位于绿篱花园中央",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/450100246da946379b2a28dc4e43ec96.png"
+              },
+              "color": "#77ff77",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "geometry",
+              "semanticFront": "面向花园主径的一面",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_喷泉_15_dj4b9edv",
+                  "name": "喷泉",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/450100246da946379b2a28dc4e43ec96.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "复古路灯_16",
+              "assetType": "复古路灯",
+              "description": "黑色铁艺复古路灯，顶部发暖黄光",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/502d01a82d3042b18ba45bb623f02810.png"
+              },
+              "color": "#008866",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "resourceId": "2849341845762",
+                  "name": "路灯",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/227da2b401ff42279cf2c7f78e4c5c08.png",
+                  "resourceUri": "hamlet-ugc/aigc_editor/dev/unity/9754990087938.glb",
+                  "dataType": 1,
+                  "style": 2,
+                  "matchScore": 1,
+                  "id": "fe_empty_asset_id_复古路灯_16_48d0exbl"
+                }
+              ]
+            },
+            {
+              "overlayId": "乔木_17",
+              "assetType": "乔木",
+              "description": "秋色乔木，枝干稀疏，叶呈黄褐色",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/85b0cc5c7e334bc188d40f3749837f4a.png"
+              },
+              "color": "#440000",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "resourceId": "8939427842818",
+                  "name": "繁茂金秋叶树",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/4a84af8a701343d7adc2a0d057730198.png",
+                  "resourceUri": "hamlet-ugc/aigc_editor/dev/unity/8856936972290.glb",
+                  "dataType": 3,
+                  "style": 4,
+                  "matchScore": 0.6795317000000001,
+                  "id": "fe_empty_asset_id_乔木_17_wqk23tix"
+                }
+              ]
+            },
+            {
+              "overlayId": "绿篱_18",
+              "assetType": "绿篱",
+              "description": "修剪整齐的低矮常绿绿篱，深绿色",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/f837e945f8504fbf8e324cb6ca355e49.png"
+              },
+              "color": "#551199",
+              "assetClass": "",
+              "placementClass": "insert",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "resourceId": "7325452800770",
+                  "name": "麦冬01",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/b925f5fb0e8849e995b8bdb7220a331f.png",
+                  "resourceUri": "tos-cn-i-c2ox06qgwk/aigc_editor/d5d3f996600043ddabfc43701be35456.png",
+                  "dataType": 2,
+                  "style": 4,
+                  "matchScore": 0.4021292000000001,
+                  "plantType": 3,
+                  "id": "fe_empty_asset_id_绿篱_18_yxkonpa6"
+                }
+              ]
+            },
+            {
+              "overlayId": "货物木箱_19",
+              "assetType": "货物木箱",
+              "description": "堆叠的棕褐色木箱和麻布货包",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/a675590a166047efbbb0f60e2e441fcf.png"
+              },
+              "color": "#0000dd",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_货物木箱_19_zmenh38a",
+                  "name": "货物木箱",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/a675590a166047efbbb0f60e2e441fcf.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "起重机_20",
+              "assetType": "起重机",
+              "description": "港口深色金属悬臂起重机，带吊钩和缆绳",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/5f428a05bf774e40981c6469e7ef31f0.png"
+              },
+              "color": "#00ccdd",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_起重机_20_p5mcm5w7",
+                  "name": "起重机",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/5f428a05bf774e40981c6469e7ef31f0.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            }
+          ],
+          "topView": {
+            "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/f842f734a9a643049f988cf410f55303.png"
+          }
+        },
+        "sprinkle_1794650412100_41kzi0xa": {
+          "id": "sprinkle_1794650412100_41kzi0xa",
+          "kind": "sprinkle",
+          "status": "completed",
+          "createdAt": 1794650412100,
+          "updatedAt": 1794650508272,
+          "prompt": "",
+          "terrainArtifactId": "terrain_1794649984605_wrpi0ums",
+          "turnId": "turn_1794650396746_qb5ik5ht",
+          "assetSelections": [
+            {
+              "overlayId": "火车站建筑_1",
+              "assetType": "火车站建筑",
+              "description": "红砖墙体配玻璃拱形顶棚的大型车站建筑，正面有圆形时钟，气势宏伟",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/31ed9e68970744e597104b7e2b00fc2f.png"
+              },
+              "color": "#ff00ff",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_火车站建筑_1_9y0kcnpo",
+                  "name": "火车站建筑",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/31ed9e68970744e597104b7e2b00fc2f.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "古典石造建筑_2",
+              "assetType": "古典石造建筑",
+              "description": "灰白色石砌古典建筑，正面有高耸柱廊，顶部带穹顶，造型庄严",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/8978cf23b70849a09a28f654822383f2.png"
+              },
+              "color": "#00ff77",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_古典石造建筑_2_zidq215r",
+                  "name": "古典石造建筑",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/8978cf23b70849a09a28f654822383f2.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "红砖宅邸_3",
+              "assetType": "红砖宅邸",
+              "description": "多层红砖宅邸，深灰坡屋顶带烟囱，墙面攀附藤蔓，窗内透出暖光",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/887165f13ae94ee0a9a479653677b1f5.png"
+              },
+              "color": "#ff0000",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "geometry",
+              "semanticFront": "正门所在立面",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_红砖宅邸_3_vx4qcyx3",
+                  "name": "红砖宅邸",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/887165f13ae94ee0a9a479653677b1f5.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "半木结构小屋_4",
+              "assetType": "半木结构小屋",
+              "description": "英式半木结构小屋，深色木架配灰瓦屋顶，体量小巧",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/de046d56dd4d4e978eadb3ea222f5509.png"
+              },
+              "color": "#9e3779",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "geometry",
+              "semanticFront": "正门所在立面",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_半木结构小屋_4_xuyr9c5b",
+                  "name": "半木结构小屋",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/de046d56dd4d4e978eadb3ea222f5509.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "砖砌仓库_5",
+              "assetType": "砖砌仓库",
+              "description": "红砖仓库建筑，拱形大门，深灰色坡屋顶，体量厚重",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/74b1aa14ffa0477a8e9955c03dbfd068.png"
+              },
+              "color": "#ffaa22",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_砖砌仓库_5_sedog4ju",
+                  "name": "砖砌仓库",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/74b1aa14ffa0477a8e9955c03dbfd068.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "码头木棚_6",
+              "assetType": "码头木棚",
+              "description": "建于木桩上的灰顶木质棚屋，底部架空临水，带有开敞内庭",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/2b4e89baa2fa4cc3be5a4c27c4a069c7.png"
+              },
+              "color": "#55ffff",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_码头木棚_6_ajfqlb3c",
+                  "name": "码头木棚",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/2b4e89baa2fa4cc3be5a4c27c4a069c7.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "石桥_7",
+              "assetType": "石桥",
+              "description": "多孔石拱桥，桥面带路灯，栏杆雕饰精致，灰褐色石质",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/f10915ea5e414f479e8134bc71c33bc5.png"
+              },
+              "color": "#6600ff",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_石桥_7_9tdqj0lf",
+                  "resourceId": "11278740504066",
+                  "name": "国风_石质古代庭院拱桥",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/88839214b6fb4388a770df064fd36033.png",
+                  "resourceUri": "hamlet-ugc/aigc_editor/dev/unity/11277665302786.glb",
+                  "dataType": 1,
+                  "style": 2
+                }
+              ]
+            },
+            {
+              "overlayId": "码头栈桥_8",
+              "assetType": "码头栈桥",
+              "description": "木质栈桥码头，由木桩支撑延伸入水，表面湿润深褐",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/d65896a98ab94b1d81466bcc271049f9.png"
+              },
+              "color": "#000055",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_码头栈桥_8_4bhhjhkk",
+                  "name": "码头栈桥",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/d65896a98ab94b1d81466bcc271049f9.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "码头起重机_9",
+              "assetType": "码头起重机",
+              "description": "深色金属臂架式起重机，立于码头，结构粗壮",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/5bb68124497a42be8424917c828ea43a.png"
+              },
+              "color": "#00aa00",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_码头起重机_9_r7qpmok7",
+                  "name": "码头起重机",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/5bb68124497a42be8424917c828ea43a.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "蒸汽船_10",
+              "assetType": "蒸汽船",
+              "description": "深褐色烟囱蒸汽船，船身细长，甲板带装卸设施，停靠于码头",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/3709f5b5e68d428fb7748b404d8ff30b.png"
+              },
+              "color": "#bb0077",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_蒸汽船_10_e6q7hkne",
+                  "name": "蒸汽船",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/3709f5b5e68d428fb7748b404d8ff30b.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "雕像_11",
+              "assetType": "雕像",
+              "description": "石制人物雕像，立于方形石座之上，深灰绿色",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/81f7556a1c804e77a1dfd7913ec7ba44.png"
+              },
+              "color": "#eeff77",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_雕像_11_k90mmqr8",
+                  "name": "雕像",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/81f7556a1c804e77a1dfd7913ec7ba44.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "欧式路灯_12",
+              "assetType": "欧式路灯",
+              "description": "铁艺欧式路灯，深色灯柱顶部发出暖黄光芒",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/7923886dbf2e42c69d4e1bdb8c481a5b.png"
+              },
+              "color": "#ee77ff",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_欧式路灯_12_8pmgvi04",
+                  "resourceId": "2849341845762",
+                  "name": "路灯",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/227da2b401ff42279cf2c7f78e4c5c08.png",
+                  "resourceUri": "hamlet-ugc/aigc_editor/dev/unity/9754990087938.glb",
+                  "dataType": 1,
+                  "style": 2
+                }
+              ]
+            },
+            {
+              "overlayId": "落叶乔木_13",
+              "assetType": "落叶乔木",
+              "description": "秋末的落叶乔木，枝干纤瘦，叶片稀疏呈黄褐色",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/76f7ed4641ed47148c4af4d8e6aaeec0.png"
+              },
+              "color": "#ff6688",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_落叶乔木_13_j8071y2f",
+                  "resourceId": "8939427842818",
+                  "name": "繁茂金秋叶树",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/4a84af8a701343d7adc2a0d057730198.png",
+                  "resourceUri": "hamlet-ugc/aigc_editor/dev/unity/8856936972290.glb",
+                  "dataType": 3,
+                  "style": 4
+                }
+              ]
+            },
+            {
+              "overlayId": "灌木绿篱_14",
+              "assetType": "灌木绿篱",
+              "description": "低矮修剪整齐的深绿色灌木绿篱",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/4aa14a6f88bd450bb2c969197682849a.png"
+              },
+              "color": "#6677ff",
+              "assetClass": "",
+              "placementClass": "insert",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_灌木绿篱_14_t53tyie7",
+                  "resourceId": "7325452800770",
+                  "name": "麦冬01",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/b925f5fb0e8849e995b8bdb7220a331f.png",
+                  "resourceUri": "tos-cn-i-c2ox06qgwk/aigc_editor/d5d3f996600043ddabfc43701be35456.png",
+                  "dataType": 2,
+                  "style": 4,
+                  "plantType": 3
+                }
+              ]
+            },
+            {
+              "overlayId": "货物木箱_15",
+              "assetType": "货物木箱",
+              "description": "堆积的棕色木质货箱，方形，表面有捆扎痕迹",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/1aa09b65740843178d0ae5ba241daf04.png"
+              },
+              "color": "#77ff77",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_货物木箱_15_qgaxj8mk",
+                  "name": "货物木箱",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/1aa09b65740843178d0ae5ba241daf04.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            }
+          ],
+          "topView": {
+            "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/e092dffc058944dea6d534e9d1ae3df5.png"
+          }
+        },
+        "composed_map_1794650508225_rsiq6xa4": {
+          "id": "composed_map_1794650508225_rsiq6xa4",
+          "kind": "composedMap",
+          "codeScatterPending": true,
+          "mapSize": 256,
+          "status": "completed",
+          "createdAt": 1794650508225,
+          "updatedAt": 1794713540671,
+          "terrainArtifactId": "terrain_1794649984605_wrpi0ums",
+          "sprinkleArtifactId": "sprinkle_1794650412100_41kzi0xa",
+          "turnId": "turn_1794650396746_qb5ik5ht",
+          "preview": {
+            "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/e092dffc058944dea6d534e9d1ae3df5.png"
+          },
+          "assetSelections": [
+            {
+              "overlayId": "火车站建筑_1",
+              "assetType": "火车站建筑",
+              "description": "红砖墙体配玻璃拱形顶棚的大型车站建筑，正面有圆形时钟，气势宏伟",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/31ed9e68970744e597104b7e2b00fc2f.png"
+              },
+              "color": "#ff00ff",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_火车站建筑_1_9y0kcnpo",
+                  "name": "火车站建筑",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/31ed9e68970744e597104b7e2b00fc2f.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "古典石造建筑_2",
+              "assetType": "古典石造建筑",
+              "description": "灰白色石砌古典建筑，正面有高耸柱廊，顶部带穹顶，造型庄严",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/8978cf23b70849a09a28f654822383f2.png"
+              },
+              "color": "#00ff77",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_古典石造建筑_2_zidq215r",
+                  "name": "古典石造建筑",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/8978cf23b70849a09a28f654822383f2.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "红砖宅邸_3",
+              "assetType": "红砖宅邸",
+              "description": "多层红砖宅邸，深灰坡屋顶带烟囱，墙面攀附藤蔓，窗内透出暖光",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/887165f13ae94ee0a9a479653677b1f5.png"
+              },
+              "color": "#ff0000",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "geometry",
+              "semanticFront": "正门所在立面",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_红砖宅邸_3_vx4qcyx3",
+                  "name": "红砖宅邸",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/887165f13ae94ee0a9a479653677b1f5.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "半木结构小屋_4",
+              "assetType": "半木结构小屋",
+              "description": "英式半木结构小屋，深色木架配灰瓦屋顶，体量小巧",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/de046d56dd4d4e978eadb3ea222f5509.png"
+              },
+              "color": "#9e3779",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "geometry",
+              "semanticFront": "正门所在立面",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_半木结构小屋_4_xuyr9c5b",
+                  "name": "半木结构小屋",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/de046d56dd4d4e978eadb3ea222f5509.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "砖砌仓库_5",
+              "assetType": "砖砌仓库",
+              "description": "红砖仓库建筑，拱形大门，深灰色坡屋顶，体量厚重",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/74b1aa14ffa0477a8e9955c03dbfd068.png"
+              },
+              "color": "#ffaa22",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_砖砌仓库_5_sedog4ju",
+                  "name": "砖砌仓库",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/74b1aa14ffa0477a8e9955c03dbfd068.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "码头木棚_6",
+              "assetType": "码头木棚",
+              "description": "建于木桩上的灰顶木质棚屋，底部架空临水，带有开敞内庭",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/2b4e89baa2fa4cc3be5a4c27c4a069c7.png"
+              },
+              "color": "#55ffff",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_码头木棚_6_ajfqlb3c",
+                  "name": "码头木棚",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/2b4e89baa2fa4cc3be5a4c27c4a069c7.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "石桥_7",
+              "assetType": "石桥",
+              "description": "多孔石拱桥，桥面带路灯，栏杆雕饰精致，灰褐色石质",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/f10915ea5e414f479e8134bc71c33bc5.png"
+              },
+              "color": "#6600ff",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_石桥_7_9tdqj0lf",
+                  "resourceId": "11278740504066",
+                  "name": "国风_石质古代庭院拱桥",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/88839214b6fb4388a770df064fd36033.png",
+                  "resourceUri": "hamlet-ugc/aigc_editor/dev/unity/11277665302786.glb",
+                  "dataType": 1,
+                  "style": 2
+                }
+              ]
+            },
+            {
+              "overlayId": "码头栈桥_8",
+              "assetType": "码头栈桥",
+              "description": "木质栈桥码头，由木桩支撑延伸入水，表面湿润深褐",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/d65896a98ab94b1d81466bcc271049f9.png"
+              },
+              "color": "#000055",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_码头栈桥_8_4bhhjhkk",
+                  "name": "码头栈桥",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/d65896a98ab94b1d81466bcc271049f9.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "码头起重机_9",
+              "assetType": "码头起重机",
+              "description": "深色金属臂架式起重机，立于码头，结构粗壮",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/5bb68124497a42be8424917c828ea43a.png"
+              },
+              "color": "#00aa00",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_码头起重机_9_r7qpmok7",
+                  "name": "码头起重机",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/5bb68124497a42be8424917c828ea43a.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "蒸汽船_10",
+              "assetType": "蒸汽船",
+              "description": "深褐色烟囱蒸汽船，船身细长，甲板带装卸设施，停靠于码头",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/3709f5b5e68d428fb7748b404d8ff30b.png"
+              },
+              "color": "#bb0077",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_蒸汽船_10_e6q7hkne",
+                  "name": "蒸汽船",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/3709f5b5e68d428fb7748b404d8ff30b.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "雕像_11",
+              "assetType": "雕像",
+              "description": "石制人物雕像，立于方形石座之上，深灰绿色",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/81f7556a1c804e77a1dfd7913ec7ba44.png"
+              },
+              "color": "#eeff77",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_雕像_11_k90mmqr8",
+                  "name": "雕像",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/81f7556a1c804e77a1dfd7913ec7ba44.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            },
+            {
+              "overlayId": "欧式路灯_12",
+              "assetType": "欧式路灯",
+              "description": "铁艺欧式路灯，深色灯柱顶部发出暖黄光芒",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/7923886dbf2e42c69d4e1bdb8c481a5b.png"
+              },
+              "color": "#ee77ff",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_欧式路灯_12_8pmgvi04",
+                  "resourceId": "2849341845762",
+                  "name": "路灯",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/227da2b401ff42279cf2c7f78e4c5c08.png",
+                  "resourceUri": "hamlet-ugc/aigc_editor/dev/unity/9754990087938.glb",
+                  "dataType": 1,
+                  "style": 2
+                }
+              ]
+            },
+            {
+              "overlayId": "落叶乔木_13",
+              "assetType": "落叶乔木",
+              "description": "秋末的落叶乔木，枝干纤瘦，叶片稀疏呈黄褐色",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/76f7ed4641ed47148c4af4d8e6aaeec0.png"
+              },
+              "color": "#ff6688",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_落叶乔木_13_j8071y2f",
+                  "resourceId": "8939427842818",
+                  "name": "繁茂金秋叶树",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/4a84af8a701343d7adc2a0d057730198.png",
+                  "resourceUri": "hamlet-ugc/aigc_editor/dev/unity/8856936972290.glb",
+                  "dataType": 3,
+                  "style": 4
+                }
+              ]
+            },
+            {
+              "overlayId": "灌木绿篱_14",
+              "assetType": "灌木绿篱",
+              "description": "低矮修剪整齐的深绿色灌木绿篱",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/4aa14a6f88bd450bb2c969197682849a.png"
+              },
+              "color": "#6677ff",
+              "assetClass": "",
+              "placementClass": "insert",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_灌木绿篱_14_t53tyie7",
+                  "resourceId": "7325452800770",
+                  "name": "麦冬01",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/b925f5fb0e8849e995b8bdb7220a331f.png",
+                  "resourceUri": "tos-cn-i-c2ox06qgwk/aigc_editor/d5d3f996600043ddabfc43701be35456.png",
+                  "dataType": 2,
+                  "style": 4,
+                  "plantType": 3
+                }
+              ]
+            },
+            {
+              "overlayId": "货物木箱_15",
+              "assetType": "货物木箱",
+              "description": "堆积的棕色木质货箱，方形，表面有捆扎痕迹",
+              "image": {
+                "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/1aa09b65740843178d0ae5ba241daf04.png"
+              },
+              "color": "#77ff77",
+              "assetClass": "",
+              "placementClass": "scatter",
+              "modelKind": "topology",
+              "selectedAssets": [
+                {
+                  "id": "fe_empty_asset_id_货物木箱_15_qgaxj8mk",
+                  "name": "货物木箱",
+                  "previewUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/1aa09b65740843178d0ae5ba241daf04.png",
+                  "isAIPlaceholder": true
+                }
+              ]
+            }
+          ],
+          "semanticMap": {
+            "remoteUri": "tos-cn-i-c2ox06qgwk/aigc_editor/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/23a694b6702841b1b4c6def2a04e7dd2.png"
+          }
+        }
+      },
+      "asyncAsset3dTasks": [
+        {
+          "id": "asset3d_1794650598377_s9i6fez8",
+          "placeholderAssetId": "fe_empty_asset_id_火车站建筑_1_9y0kcnpo",
+          "overlayId": "火车站建筑_1",
+          "assetType": "火车站建筑",
+          "prompt": "生成一个火车站建筑 3D 模型。\n物品描述：红砖墙体配玻璃拱形顶棚的大型车站建筑，正面有圆形时钟，气势宏伟\n只生成目标资产的一个完整单体；相邻建筑、物体、地面和背景仅作参考，不并入模型。保留目标本身的庭院、洞口和贯通通道，不填实或封顶。\n参考随消息附带的撒点裁剪缩略图，还原该物品的外观特征。",
+          "sprinkleArtifactId": "sprinkle_1794650412100_41kzi0xa",
+          "status": "completed",
+          "createdAt": 1794650598377,
+          "updatedAt": 1794650811242,
+          "providerTaskId": "4a67afbb-46fb-4284-8d20-f2089910ed4e",
+          "workspaceId": "workspace_rsayv6jr",
+          "dataType": 1,
+          "resourceId": "module-direct-9d78e5e72fb4b8eb",
+          "resourceUri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/p23cxea0yd03dygc.glb",
+          "style": 2
+        },
+        {
+          "id": "asset3d_1794650598377_6fw94huy",
+          "placeholderAssetId": "fe_empty_asset_id_古典石造建筑_2_zidq215r",
+          "overlayId": "古典石造建筑_2",
+          "assetType": "古典石造建筑",
+          "prompt": "生成一个古典石造建筑 3D 模型。\n物品描述：灰白色石砌古典建筑，正面有高耸柱廊，顶部带穹顶，造型庄严\n只生成目标资产的一个完整单体；相邻建筑、物体、地面和背景仅作参考，不并入模型。保留目标本身的庭院、洞口和贯通通道，不填实或封顶。\n参考随消息附带的撒点裁剪缩略图，还原该物品的外观特征。",
+          "sprinkleArtifactId": "sprinkle_1794650412100_41kzi0xa",
+          "status": "completed",
+          "createdAt": 1794650598377,
+          "updatedAt": 1794650770060,
+          "providerTaskId": "09ab1e94-adff-4c58-8635-517a9f2f21dc",
+          "workspaceId": "workspace_solcqjjh",
+          "dataType": 1,
+          "resourceId": "module-direct-213bdfbcf6633048",
+          "resourceUri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/px2714jfk9ikfky9.glb",
+          "style": 2
+        },
+        {
+          "id": "asset3d_1794650598377_z9nfhcxz",
+          "placeholderAssetId": "fe_empty_asset_id_红砖宅邸_3_vx4qcyx3",
+          "overlayId": "红砖宅邸_3",
+          "assetType": "红砖宅邸",
+          "prompt": "生成一个红砖宅邸 3D 模型。\n物品描述：多层红砖宅邸，深灰坡屋顶带烟囱，墙面攀附藤蔓，窗内透出暖光\n请程序建模并正式归档一个完整静态资产 WPrefab，允许内部包含多个模型和层级。仅使用静态模型、材质和碰撞，不添加脚本、动画、UI、粒子或其他动态组件。该资产的语义正面是\"正门所在立面\"；使语义正面朝资产本地 +Z，+Y 向上。不要按地图中的最终摆放方向预旋转资产；场景代码会绕 Y 轴设置世界朝向。\n只生成目标资产的一个完整单体；相邻建筑、物体、地面和背景仅作参考，不并入模型。保留目标本身的庭院、洞口和贯通通道，不填实或封顶。\n参考随消息附带的撒点裁剪缩略图，还原该物品的外观特征。",
+          "sprinkleArtifactId": "sprinkle_1794650412100_41kzi0xa",
+          "status": "completed",
+          "createdAt": 1794650598377,
+          "updatedAt": 1794713549407,
+          "workspaceId": "workspace_drfxh1nc",
+          "dataType": 4,
+          "resourceId": "brick-mansion",
+          "resourceUri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/46ut0b04mypl6b4i.wprefab"
+        },
+        {
+          "id": "asset3d_1794650598377_34jk456a",
+          "placeholderAssetId": "fe_empty_asset_id_半木结构小屋_4_xuyr9c5b",
+          "overlayId": "半木结构小屋_4",
+          "assetType": "半木结构小屋",
+          "prompt": "生成一个半木结构小屋 3D 模型。\n物品描述：英式半木结构小屋，深色木架配灰瓦屋顶，体量小巧\n请程序建模并正式归档一个完整静态资产 WPrefab，允许内部包含多个模型和层级。仅使用静态模型、材质和碰撞，不添加脚本、动画、UI、粒子或其他动态组件。该资产的语义正面是\"正门所在立面\"；使语义正面朝资产本地 +Z，+Y 向上。不要按地图中的最终摆放方向预旋转资产；场景代码会绕 Y 轴设置世界朝向。\n只生成目标资产的一个完整单体；相邻建筑、物体、地面和背景仅作参考，不并入模型。保留目标本身的庭院、洞口和贯通通道，不填实或封顶。\n参考随消息附带的撒点裁剪缩略图，还原该物品的外观特征。",
+          "sprinkleArtifactId": "sprinkle_1794650412100_41kzi0xa",
+          "status": "completed",
+          "createdAt": 1794650598377,
+          "updatedAt": 1794713549407,
+          "workspaceId": "workspace_d4modkxz",
+          "dataType": 4,
+          "resourceId": "half-timber-cottage",
+          "resourceUri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/hpg9z5utcsn3c3lv.wprefab"
+        },
+        {
+          "id": "asset3d_1794650598377_nsnxxss2",
+          "placeholderAssetId": "fe_empty_asset_id_砖砌仓库_5_sedog4ju",
+          "overlayId": "砖砌仓库_5",
+          "assetType": "砖砌仓库",
+          "prompt": "生成一个砖砌仓库 3D 模型。\n物品描述：红砖仓库建筑，拱形大门，深灰色坡屋顶，体量厚重\n只生成目标资产的一个完整单体；相邻建筑、物体、地面和背景仅作参考，不并入模型。保留目标本身的庭院、洞口和贯通通道，不填实或封顶。\n参考随消息附带的撒点裁剪缩略图，还原该物品的外观特征。",
+          "sprinkleArtifactId": "sprinkle_1794650412100_41kzi0xa",
+          "status": "completed",
+          "createdAt": 1794650598377,
+          "updatedAt": 1794650765406,
+          "providerTaskId": "48a3a96d-d488-4f87-b7a2-aba5b9a6bdb0",
+          "workspaceId": "workspace_hf763278",
+          "dataType": 1,
+          "resourceId": "module-direct-d0df465b264988a7",
+          "resourceUri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/jeickfp37h5ku7r7.glb",
+          "style": 2
+        },
+        {
+          "id": "asset3d_1794650598377_pn0sy9jr",
+          "placeholderAssetId": "fe_empty_asset_id_码头木棚_6_ajfqlb3c",
+          "overlayId": "码头木棚_6",
+          "assetType": "码头木棚",
+          "prompt": "生成一个码头木棚 3D 模型。\n物品描述：建于木桩上的灰顶木质棚屋，底部架空临水，带有开敞内庭\n只生成目标资产的一个完整单体；相邻建筑、物体、地面和背景仅作参考，不并入模型。保留目标本身的庭院、洞口和贯通通道，不填实或封顶。\n参考随消息附带的撒点裁剪缩略图，还原该物品的外观特征。",
+          "sprinkleArtifactId": "sprinkle_1794650412100_41kzi0xa",
+          "status": "completed",
+          "createdAt": 1794650598377,
+          "updatedAt": 1794650796821,
+          "providerTaskId": "b78787cf-5ce4-4e9b-b616-c6ca5f1aa04a",
+          "workspaceId": "workspace_x9gvb2uv",
+          "dataType": 1,
+          "resourceId": "module-direct-463dae79b036bf7d",
+          "resourceUri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/0vs6ii07lqqgv0kw.glb",
+          "style": 2
+        },
+        {
+          "id": "asset3d_1794650598377_r0recx7o",
+          "placeholderAssetId": "fe_empty_asset_id_码头栈桥_8_4bhhjhkk",
+          "overlayId": "码头栈桥_8",
+          "assetType": "码头栈桥",
+          "prompt": "生成一个码头栈桥 3D 模型。\n物品描述：木质栈桥码头，由木桩支撑延伸入水，表面湿润深褐\n只生成目标资产的一个完整单体；相邻建筑、物体、地面和背景仅作参考，不并入模型。保留目标本身的庭院、洞口和贯通通道，不填实或封顶。\n参考随消息附带的撒点裁剪缩略图，还原该物品的外观特征。",
+          "sprinkleArtifactId": "sprinkle_1794650412100_41kzi0xa",
+          "status": "completed",
+          "createdAt": 1794650598377,
+          "updatedAt": 1794650762700,
+          "providerTaskId": "e82c010e-d21f-42e4-aa24-5405e3a367e3",
+          "workspaceId": "workspace_fyvazb7q",
+          "dataType": 1,
+          "resourceId": "module-direct-2c79250815fb5ffc",
+          "resourceUri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/7v8pzcle04cne7uy.glb",
+          "style": 2
+        },
+        {
+          "id": "asset3d_1794650598377_8ou5yk41",
+          "placeholderAssetId": "fe_empty_asset_id_码头起重机_9_r7qpmok7",
+          "overlayId": "码头起重机_9",
+          "assetType": "码头起重机",
+          "prompt": "生成一个码头起重机 3D 模型。\n物品描述：深色金属臂架式起重机，立于码头，结构粗壮\n只生成目标资产的一个完整单体；相邻建筑、物体、地面和背景仅作参考，不并入模型。保留目标本身的庭院、洞口和贯通通道，不填实或封顶。\n参考随消息附带的撒点裁剪缩略图，还原该物品的外观特征。",
+          "sprinkleArtifactId": "sprinkle_1794650412100_41kzi0xa",
+          "status": "completed",
+          "createdAt": 1794650598377,
+          "updatedAt": 1794650759002,
+          "providerTaskId": "f7d029c2-0cf4-4a13-bfc8-e42c19a39adb",
+          "workspaceId": "workspace_7kuqsy5r",
+          "dataType": 1,
+          "resourceId": "module-direct-63b3791ffd5d683b",
+          "resourceUri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/ab57pymks8jt1ksk.glb",
+          "style": 2
+        },
+        {
+          "id": "asset3d_1794650598377_7gkaw0ft",
+          "placeholderAssetId": "fe_empty_asset_id_蒸汽船_10_e6q7hkne",
+          "overlayId": "蒸汽船_10",
+          "assetType": "蒸汽船",
+          "prompt": "生成一个蒸汽船 3D 模型。\n物品描述：深褐色烟囱蒸汽船，船身细长，甲板带装卸设施，停靠于码头\n只生成目标资产的一个完整单体；相邻建筑、物体、地面和背景仅作参考，不并入模型。保留目标本身的庭院、洞口和贯通通道，不填实或封顶。\n参考随消息附带的撒点裁剪缩略图，还原该物品的外观特征。",
+          "sprinkleArtifactId": "sprinkle_1794650412100_41kzi0xa",
+          "status": "completed",
+          "createdAt": 1794650598377,
+          "updatedAt": 1794650756492,
+          "providerTaskId": "1a7a8b19-4906-42ce-b2af-650c0f4d02cb",
+          "workspaceId": "workspace_yvs0lhzy",
+          "dataType": 1,
+          "resourceId": "module-direct-406ae800383f3554",
+          "resourceUri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/7gsl8rt5mgbd92fa.glb",
+          "style": 2
+        },
+        {
+          "id": "asset3d_1794650598377_49sb5hoo",
+          "placeholderAssetId": "fe_empty_asset_id_雕像_11_k90mmqr8",
+          "overlayId": "雕像_11",
+          "assetType": "雕像",
+          "prompt": "生成一个雕像 3D 模型。\n物品描述：石制人物雕像，立于方形石座之上，深灰绿色\n只生成目标资产的一个完整单体；相邻建筑、物体、地面和背景仅作参考，不并入模型。保留目标本身的庭院、洞口和贯通通道，不填实或封顶。\n参考随消息附带的撒点裁剪缩略图，还原该物品的外观特征。",
+          "sprinkleArtifactId": "sprinkle_1794650412100_41kzi0xa",
+          "status": "completed",
+          "createdAt": 1794650598377,
+          "updatedAt": 1794650761266,
+          "providerTaskId": "f29445bf-3dba-4128-8d91-1c9cac69f15c",
+          "workspaceId": "workspace_ouyqkhuw",
+          "dataType": 1,
+          "resourceId": "module-direct-108498e072d3dd94",
+          "resourceUri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/4x75o7wnvazeg3e7.glb",
+          "style": 2
+        },
+        {
+          "id": "asset3d_1794650598377_9iqwuc9z",
+          "placeholderAssetId": "fe_empty_asset_id_货物木箱_15_qgaxj8mk",
+          "overlayId": "货物木箱_15",
+          "assetType": "货物木箱",
+          "prompt": "生成一个货物木箱 3D 模型。\n物品描述：堆积的棕色木质货箱，方形，表面有捆扎痕迹\n只生成目标资产的一个完整单体；相邻建筑、物体、地面和背景仅作参考，不并入模型。保留目标本身的庭院、洞口和贯通通道，不填实或封顶。\n参考随消息附带的撒点裁剪缩略图，还原该物品的外观特征。",
+          "sprinkleArtifactId": "sprinkle_1794650412100_41kzi0xa",
+          "status": "completed",
+          "createdAt": 1794650598377,
+          "updatedAt": 1794650811003,
+          "providerTaskId": "67184a1a-e50d-4dc0-84cb-9c522d1c6259",
+          "workspaceId": "workspace_qftozic3",
+          "dataType": 1,
+          "resourceId": "module-direct-b8b40ee9cfd9705d",
+          "resourceUri": "hamlet-ugc/aigc_editor/dev/unity/MS4wLjABAAAApiKUjxhFNgwpT5IM8HgSc7QHxift0g_zCwOueDbPT2eI6tZEqk9j7Hj786BnbFF8/rxcrelgiws7ox0xv.glb",
+          "style": 2
+        }
+      ],
+      "createdAt": 1794649951190,
+      "updatedAt": 1794713877591,
+      "workspaceId": "workspace_ulmbfs6v",
+      "opencodeSessionId": "ses_e2686e901ffeKc6LBkJd5BbYLX",
+      "annotationSubmissions": {}
+    }
+  ]
+}

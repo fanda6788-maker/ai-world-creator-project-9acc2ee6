@@ -1,0 +1,14 @@
+# 生成过程会话、临时工作区与调试上传包
+ai-sessions/
+.ai-asset-debug-upload/
+.ai-pcg-debug-upload/
+
+# 临时文件与备份
+*.bak
+*.tmp
+*.log
+
+# 常见系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
